@@ -1,4 +1,10 @@
+import ModalTambahBarang from "./ModalTambahBarang/ModalTambahBarang";
+
 export default class TambahBarangPage{
+    public modalTambahBarang: ModalTambahBarang;
+    constructor(){
+        this.modalTambahBarang = new ModalTambahBarang();
+    }
     kodeGroupSelectBox(){
         return cy.get('#kode_kategori > .select-search__value > .select-search__input');
     }

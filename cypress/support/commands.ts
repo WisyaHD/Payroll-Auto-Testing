@@ -41,7 +41,7 @@ export {};
 declare global {
     namespace Cypress {
         interface Chainable {
-            login: typeof login
+            login: typeof login,
         }
     }
 }
@@ -59,5 +59,5 @@ const login = (user_id: string, password: string) => {
 }
 
 Cypress.Commands.addAll({
-    login
+    login,
 })
