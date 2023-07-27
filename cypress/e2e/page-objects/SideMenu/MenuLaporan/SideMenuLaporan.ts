@@ -7,7 +7,7 @@ export default class SideMenuLaporan extends SideMenuBase{
         this.generateMenu(get, false, 23).click();
     }
 
-    selectMenuLaporanBarangParent(){
-        
+    selectMenuLaporanBarangParent(select: number){
+        this.generateChildSubMenu(select);
     }
 }
