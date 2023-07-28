@@ -13,7 +13,8 @@
     "cypress": "^12.17.2",
     "dotenv": "^16.3.1",
     "pdf-parse": "^1.1.1",
-    "typescript": "^5.1.6"
+    "typescript": "^5.1.6",
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
     "@types/node": "^20.4.5",
