@@ -1,12 +1,14 @@
 import { defineConfig } from "cypress";
 import { readPdf } from "./cypress/scripts/readPDF";
+import { readExcel } from "./cypress/scripts/readExcel";
 
 export default defineConfig({
   e2e: {
     setupNodeEvents(on, config) {
       // implement node event listeners here
       on('task', {
-        readPdf
+        readPdf,
+        readExcel,
       })
     },
     baseUrl: "https://qc.nagatech.id/",
