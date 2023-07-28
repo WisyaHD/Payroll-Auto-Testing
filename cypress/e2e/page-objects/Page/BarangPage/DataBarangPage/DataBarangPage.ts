@@ -12,11 +12,11 @@ export default class DataBarangPage{
     }
 
     kodeBakiInputBox(){
-        return cy.get(':nth-child(3) > .form-group > .form-control');
+        return cy.get(':nth-child(4) > .form-group > .form-control');
     }
 
     kodeJenisInputBox(){
-        return cy.get(':nth-child(3) > .form-group > .form-control');
+        return cy.get(':nth-child(5) > .form-group > .form-control');
     }
 
     beratDariInputBox(){
