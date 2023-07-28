@@ -1,16 +1,26 @@
+import SideMenu from "../../../page-objects/SideMenu/SideMenu";
+import Page from "../../../page-objects/Page/Page";
+
 const user_id = "helpdesk";
 const password = "helpdesknagatechberasputih"
+const sidemenu = new SideMenu();
+const page = new Page();
 
 describe('AccessMenuDataBarang', () => {
     beforeEach(() => {
         cy.login(user_id, password);
     });
-    it('click menu', { scrollBehavior: false }, () => {
-        cy.visit('/laporan-tambah-barang');
-        cy.url().should('include', '/laporan-tambah-barang');
-        cy.get(':nth-child(7) > .btn').click();
+    it('click menu', () => {
+        cy.visit('/dashboard')
+        cy.url().should('include', '/dashboard');
+        cy.url().then((url: any) => {
+            sidemenu.sideMenuLaporan.selectMenuLaporanParent(url);
+            sidemenu.sideMenuLaporan.laporanBarangSideMenu.selectMenuLaporanBarangParent(url);
+        })
+        sidemenu.sideMenuLaporan.laporanBarangSideMenu.selectLaporanTambahBarang(true, "-");
+        page.laporanPage.laporanBarangPage.laporanTambahBarangPage.lihatLaporanButton();
         cy.wait(6000);
-        cy.get(':nth-child(13) > .btn').click({force: true});
+        page.laporanPage.laporanBarangPage.laporanTambahBarangPage.exportPdfButton();
         cy.task('readPdf', './cypress/downloads/LAPORAN BARANG DETAIL.pdf').should('include', 'TAMBAH BARANG');
     })
 })

@@ -1,5 +1,5 @@
-import SideMenu from '../../page-objects/SideMenu/SideMenu';
-import Page from '../../page-objects/Page/Page';
+import SideMenu from '../../../page-objects/SideMenu/SideMenu';
+import Page from '../../../page-objects/Page/Page';
 
 const user_id = "helpdesk";
 const password = "helpdesknagatechberasputih"
@@ -21,5 +21,9 @@ describe('AccessMenuDataBarang', () => {
         page.barangPage.dataBarangPage.kodeBarcodeInputBox().type('00000667');
         page.barangPage.dataBarangPage.cariDataBarangButton().click();
         page.barangPage.dataBarangPage.kodeBarcodeInputBox().clear();
+        cy.wait(500);
+        page.barangPage.dataBarangPage.namaBarangInputBox().type('CINCIN MAS KAWIN');
+        page.barangPage.dataBarangPage.cariDataBarangButton().click();
+        page.barangPage.dataBarangPage.namaBarangInputBox().clear();
     })
 })
