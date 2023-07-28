@@ -4,5 +4,11 @@
         "qc-cabang-1":"https://qc-cabang.goldstore.id",
         "qc-cabang-2":"https://qc-cabang2.goldstore.id",
         "qc-pusat":"https://qc-pusat.goldstore.id"
+    },
+    "server-ip":{
+        "qc-nagatech":"https://103.119.55.52:7373",
+        "qc-cabang-1":"https://8.215.36.24:7111",
+        "qc-cabang-2":"https://8.215.36.24:7115",
+        "qc-pusat":"https://8.215.36.24:7101"
     }
 }
