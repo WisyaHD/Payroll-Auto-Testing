@@ -10,5 +10,6 @@
         "qc-cabang-1":"https://8.215.36.24:7111",
         "qc-cabang-2":"https://8.215.36.24:7115",
         "qc-pusat":"https://8.215.36.24:7101"
-    }
+    },
+    "x-auth-token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiUFVTQVQiLCJsZXZlbCI6IlNVIiwiaWF0IjoxNjQyNDAyMDg4fQ.TWq2eBf_HAtwYzeomz8KA7PJM0151iafJsJjQmz2Zxs"
 }

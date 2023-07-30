@@ -17,6 +17,7 @@ describe('AccessMenuDataBarang', () => {
             sidemenu.sideMenuLaporan.selectMenuLaporanParent(url);
             sidemenu.sideMenuLaporan.laporanBarangSideMenu.selectMenuLaporanBarangParent(url);
         })
+        cy.wait(5000);
         sidemenu.sideMenuLaporan.laporanBarangSideMenu.selectLaporanTambahBarang(true, "-");
         page.laporanPage.laporanBarangPage.laporanTambahBarangPage.lihatLaporanButton();
         cy.wait(6000);
