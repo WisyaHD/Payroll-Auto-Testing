@@ -1,6 +1,9 @@
 node_modules
 .env
-
 *.pdf
 *.xls
 *.xlsx
+./mochawesome-report
+./cypress/result
+./vidoes
+./screenshoots

@@ -17,8 +17,13 @@ describe('AccessMenuDataBarang', () => {
             sidemenu.sideMenuLaporan.selectMenuLaporanParent(url);
             sidemenu.sideMenuLaporan.laporanBarangSideMenu.selectMenuLaporanBarangParent(url);
         })
+    });
+    it('click cari', () => {
+        cy.wait(5000);
         sidemenu.sideMenuLaporan.laporanBarangSideMenu.selectLaporanTambahBarang(true, "-");
         page.laporanPage.laporanBarangPage.laporanTambahBarangPage.lihatLaporanButton();
+    });
+    it('click download pdf dan reading', () => {
         cy.wait(6000);
         page.laporanPage.laporanBarangPage.laporanTambahBarangPage.exportPdfButton();
         cy.task('readPdf', './cypress/downloads/LAPORAN BARANG DETAIL.pdf').should('include', 'TAMBAH BARANG');

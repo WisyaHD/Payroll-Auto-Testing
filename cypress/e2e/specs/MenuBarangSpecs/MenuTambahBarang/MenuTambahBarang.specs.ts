@@ -10,7 +10,7 @@ describe('AccessMenuTambahBarang', () => {
     beforeEach(() => {
         cy.login(user_id, password);
     });
-    it('click menu', { scrollBehavior: false }, () => {
+    it('click menu', () => {
         cy.visit('/dashboard');
         cy.url().should('include', '/dashboard');
         cy.url().then((url: any) => {

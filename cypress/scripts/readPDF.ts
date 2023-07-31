@@ -9,5 +9,5 @@ export const readPdf = (pathToPdf: string) => {
         pdf(dataBuffer).then(function ({ text }: any) {
             resolve(text)
         });
-    })
+    });
 }

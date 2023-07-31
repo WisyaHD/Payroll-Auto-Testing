@@ -12,10 +12,10 @@ export default class LaporanTambahBarangPage{
     }
 
     exportPdfButton(){
-        return cy.get(':nth-child(13) > .btn');
+        return cy.get(':nth-child(13) > .btn').click({force: true});
     }
 
     exportExcelButton(){
-        return cy.get('#test-table-xls-button');
+        return cy.get('#test-table-xls-button').click({force: true});
     }
 }
