@@ -35,7 +35,7 @@ export default class SideMenuBarang extends SideMenuBase{
         return this.generateSubMenu(4).click({scrollBehavior: false});
     }
 
-    selectPindahBarangSatuBaki(isActive: boolean, url: string = "-"){
+    selectMenuPindahBarangSatuBaki(isActive: boolean, url: string = "-"){
         if(!isActive){
             this.selectMenuBarangParent(url);
         }
