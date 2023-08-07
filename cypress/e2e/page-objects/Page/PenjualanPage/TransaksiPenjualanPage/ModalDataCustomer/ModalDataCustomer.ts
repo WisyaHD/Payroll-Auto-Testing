@@ -1,6 +1,6 @@
 export default class ModalDataCustomer{
     salesSelectComboBox(){
-        return cy.get('.css-yk16xz-control');
+        return cy.get('.css-1wy0on6 > :nth-child(3)');
     }
 
     jenisPelangganSelectComboBox(){

@@ -36,11 +36,18 @@ describe('AccessMenuTransaksiPesanan', () => {
         cy.wait(1000);
         page.pesananPage.transaksiPesananPage.SimpananPesanan().click({force: true});
         cy.wait(1000);
-        // page.pesananPage.transaksiPesananPage.modalDataSimpananPesanan.DeskripsiNominalInputBox().type('200000', {force: true});
+        page.pesananPage.transaksiPesananPage.modalDataSimpananPesanan.DeskripsiNominalInputBox().type('2000000', {force: true});
+        page.pesananPage.transaksiPesananPage.modalDataSimpananPesanan.DeskripsiTambahTransaksiButtonBox().click();
+        cy.wait(1000);
+        page.pesananPage.transaksiPesananPage.modalDataSimpananPesanan.PilihJenisBayarSelectComboBox().type('TRANSFER{downArrow}{enter}',{force: true});
+        page.pesananPage.transaksiPesananPage.modalDataSimpananPesanan.NoRekeningSelectComboBox().type('708956432{downArrow}{enter}',{force: true});
+        page.pesananPage.transaksiPesananPage.modalDataSimpananPesanan.CardNoInputBox().type('89423', {force: true});
         page.pesananPage.transaksiPesananPage.modalDataSimpananPesanan.SisaButtonBox().click({force: true});
         page.pesananPage.transaksiPesananPage.modalDataSimpananPesanan.DeskripsiTambahTransaksiButtonBox().click();
         cy.wait(1000);
         page.pesananPage.transaksiPesananPage.modalDataSimpananPesanan.DeskripsiBayarSekarangButtonBox().click();
+        
+        
 
     })
 })

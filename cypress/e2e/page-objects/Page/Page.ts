@@ -4,6 +4,7 @@ import ModalOtorisasi from "./ModalOtorisasi/ModalOtorisasi";
 import PesananPage from "./PesananPage/PesananPage";
 import PenjualanPage from "./PenjualanPage/PenjualanPage";
 import ModalSimpananPesanan from "./PesananPage/TransaksiPesananPage/ModalSimpananPesanan/ModalSimpananPesanan";
+import ModalSimpananPenjualan from "./PenjualanPage/TransaksiPenjualanPage/ModalSimpananPenjualan/SimpananPenjualan";
 
 export default class Page{
     public barangPage: BarangPage;
@@ -14,6 +15,7 @@ export default class Page{
     // Modal Otorisasi
     public modalOtorisasi: ModalOtorisasi;
     public modalSimpananPesanan: ModalSimpananPesanan;
+    public modalSimpananPenjualan: ModalSimpananPenjualan
 
     constructor(){
         this.barangPage = new BarangPage();
@@ -24,6 +26,6 @@ export default class Page{
         // Modal Otorisasi Register
         this.modalOtorisasi = new ModalOtorisasi();
         this.modalSimpananPesanan = new ModalSimpananPesanan();
-    
+        this.modalSimpananPenjualan = new ModalSimpananPenjualan();
     }
 }

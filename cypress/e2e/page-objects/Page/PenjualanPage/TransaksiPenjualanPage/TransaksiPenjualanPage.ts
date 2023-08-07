@@ -11,7 +11,7 @@ export default class TransaksiPenjualanPage{
     }
 
     tambahDataCustomerButton(){
-        return cy.get('.text-right > .btn-primary');
+       return cy.get('.text-right > .btn-primary');
     }
 
     tambahBarangButton(){

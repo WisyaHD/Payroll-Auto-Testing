@@ -32,6 +32,5 @@ describe('AccessMenuTambahBarang', () => {
         page.barangPage.tambahBarangPage.modalTambahBarang.beratAtributInputBox().type('0.5');
         page.barangPage.tambahBarangPage.modalTambahBarang.hargaAtributInputBox().type('200000');
         page.barangPage.tambahBarangPage.modalTambahBarang.beratPlastikInput().type('0.2');
-        page.barangPage.tambahBarangPage.modalTambahBarang.simpanDataButton().click();
     })
 })

@@ -22,7 +22,7 @@ export default class TransaksiPesananPage{
         return cy.get('.btn-success').click({force: true});
     }
     
-    ModalDataSimpananPesanan(){    
+    SimpananPesanan(){    
         return cy.get('.col-6 > .btn-primary').click({force: true});
     }
 }

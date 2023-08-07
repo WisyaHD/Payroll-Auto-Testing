@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-08-04T06:40:15.216Z",
+    "end": "2023-08-04T06:40:39.574Z",
+    "duration": 24358,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "2b88f7e3-476f-4a7e-b800-1f730b41390a",
+      "title": "",
+      "fullFile": "cypress\\e2e\\specs\\MenuPesananSpecs\\TransaksiPesananspecs\\TransaksiPesananTransferDebitCredit.specs.ts",
+      "file": "cypress\\e2e\\specs\\MenuPesananSpecs\\TransaksiPesananspecs\\TransaksiPesananTransferDebitCredit.specs.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "310d7467-0109-419d-93b5-6327ad86ef60",
+          "title": "AccessMenuTransaksiPesanan",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "click menu",
+              "fullTitle": "AccessMenuTransaksiPesanan click menu",
+              "timedOut": null,
+              "duration": 24201,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/dashboard');\ncy.url().should('include', '/dashboard');\ncy.url().then((url) => {\n    sidemenu.sideMenuPesanan.selectMenuPesananParent(url);\n});\nsidemenu.sideMenuPesanan.selectMenuTransaksiPesanan(true, \"-\");\ncy.url().should('include', '/transaksi-pesanan');\ncy.wait(1000);\npage.pesananPage.transaksiPesananPage.tambahDataCustomerButton();\ncy.wait(1000);\npage.pesananPage.transaksiPesananPage.modalDataCustomer.KodeSalesSelectComboBox().type('BOY{enter}');\npage.pesananPage.transaksiPesananPage.modalDataCustomer.namaCutomerInputBox().type('IRVAN');\npage.pesananPage.transaksiPesananPage.modalDataCustomer.noHpInputBox().type('081313979117');\npage.pesananPage.transaksiPesananPage.modalDataCustomer.simpanDataButton().click();\ncy.wait(1000);\npage.pesananPage.transaksiPesananPage.tambahDataBarangButton();\ncy.wait(1000);\npage.pesananPage.transaksiPesananPage.modalDataBarang.KategoriSelectComboBox().type('MT{downArrow}{enter}');\npage.pesananPage.transaksiPesananPage.modalDataBarang.NamaBarangInputBox().type('CINCIN EMAS TUA');\npage.pesananPage.transaksiPesananPage.modalDataBarang.BeratInputBox().type('5');\npage.pesananPage.transaksiPesananPage.modalDataBarang.DeskripsiPesananInputBox().type('CINCIN EMAS TUA');\npage.pesananPage.transaksiPesananPage.modalDataBarang.DeskripsiAddButtonBox().click();\ncy.wait(1000);\npage.pesananPage.transaksiPesananPage.SimpananPesanan().click({ force: true });\ncy.wait(1000);\npage.pesananPage.transaksiPesananPage.modalDataSimpananPesanan.PilihJenisBayarSelectComboBox().type('TRANSFER{downArrow}{enter}', { force: true });\npage.pesananPage.transaksiPesananPage.modalDataSimpananPesanan.NoRekeningSelectComboBox().type('708956432{downArrow}{enter}', { force: true });\npage.pesananPage.transaksiPesananPage.modalDataSimpananPesanan.CardNoInputBox().type('89423', { force: true });\npage.pesananPage.transaksiPesananPage.modalDataSimpananPesanan.DeskripsiNominalInputBox().type('2000000', { force: true });\npage.pesananPage.transaksiPesananPage.modalDataSimpananPesanan.DeskripsiTambahTransaksiButtonBox().click();\ncy.wait(1000);\npage.pesananPage.transaksiPesananPage.modalDataSimpananPesanan.PilihJenisBayarSelectComboBox().type('DEBIT{downArrow}{enter}', { force: true });\npage.pesananPage.transaksiPesananPage.modalDataSimpananPesanan.NoRekeningSelectComboBox().type('708956432{downArrow}{enter}', { force: true });\npage.pesananPage.transaksiPesananPage.modalDataSimpananPesanan.CardNoInputBox().type('89423', { force: true });\npage.pesananPage.transaksiPesananPage.modalDataSimpananPesanan.DeskripsiNominalInputBox().type('2000000', { force: true });\npage.pesananPage.transaksiPesananPage.modalDataSimpananPesanan.DeskripsiPlusTransaksiButtonBox().click();\ncy.wait(1000);\npage.pesananPage.transaksiPesananPage.modalDataSimpananPesanan.PilihJenisBayarSelectComboBox().type('CREDIT{downArrow}{enter}', { force: true });\npage.pesananPage.transaksiPesananPage.modalDataSimpananPesanan.NoRekeningSelectComboBox().type('708956432{downArrow}{enter}', { force: true });\npage.pesananPage.transaksiPesananPage.modalDataSimpananPesanan.CardNoInputBox().type('89423', { force: true });\npage.pesananPage.transaksiPesananPage.modalDataSimpananPesanan.SisaButtonBox().click({ force: true });\npage.pesananPage.transaksiPesananPage.modalDataSimpananPesanan.DeskripsiPlusTransaksiButtonBox().click();\ncy.wait(1000);\npage.pesananPage.transaksiPesananPage.modalDataSimpananPesanan.DeskripsiBayarSekarangButtonBox().click();",
+              "err": {},
+              "uuid": "425eada4-829c-4135-b9bd-8f45278d0a70",
+              "parentUUID": "310d7467-0109-419d-93b5-6327ad86ef60",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "425eada4-829c-4135-b9bd-8f45278d0a70"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 24201,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": true,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

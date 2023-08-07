@@ -18,10 +18,10 @@ describe('AccessMenuTambahBarang', () => {
         });
         sidemenu.sideMenuBarang.selectMenuTambahBarang(true, "-");
         cy.url().should('include', '/tambah-data-barang');
-        cy.wait(2000);
+        cy.wait(1000);
         page.barangPage.tambahBarangPage.kodeGroupSelectBox().type('MT{downArrow}{enter}');
         page.barangPage.tambahBarangPage.kodeJenisSelectBox().type('GLMT{downArrow}{enter}');
-        cy.wait(2000);
+        cy.wait(1000);
         page.barangPage.tambahBarangPage.kodeBakiSelectBox().type('BK-GL{downArrow}{enter}');
         var kode_intern = "KI-211";
         for(var i = 1; i <= 10; i++){

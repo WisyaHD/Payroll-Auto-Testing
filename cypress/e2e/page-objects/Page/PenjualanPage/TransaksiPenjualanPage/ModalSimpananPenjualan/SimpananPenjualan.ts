@@ -1,4 +1,4 @@
-export default class ModalSimpananPesanan{
+export default class ModalSimpananPenjualan{
     PilihJenisBayarSelectComboBox(){
        return cy.get(':nth-child(3) > .form-group > .select-search > .select-search__value > .select-search__input');
     }

@@ -11,7 +11,7 @@ export default class SideMenuPesanan extends SideMenuBase{
         if(!isActive){
             this.selectMenuPesananParent(url);
         }
-        return this.generateSubMenu(1).click();
+        return this.generateSubMenu(1).click({scrollBehavior: false});
     }
 
     selectAmbilBarangContoh(isActive: boolean, url: string = "-"){
