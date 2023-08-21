@@ -11,7 +11,7 @@ export default class SideMenuPenjualan extends SideMenuBase{
         if(!isActive){
             this.selectMenuPenjualanParent(url);
         }
-        return this.generateSubMenu(1).click();
+        return this.generateSubMenu(1).click({scrollBehavior: false});
     }
 
     selectMenuLihatPenjualan(isActive: boolean, url: string = "-"){

@@ -16,19 +16,19 @@ export default class ModalSimpananPesanan{
         return cy.get('#cash_trx_penjualan');
     }
     FeeInputBox(){
-    cy.get('#fee')
+    return cy.get('#fee')
     }
     SisaButtonBox(){
         return cy.get('#sisa_bayar');
     }
     DeskripsiTambahTransaksiButtonBox(){
-        return cy.get(':nth-child(1) > .row > .col-12 > .btn');
+        return cy.get('.modal-body > :nth-child(3) > :nth-child(2) > .text-right > .btn');
     }
     DeskripsiPlusTransaksiButtonBox(){
        return cy.get(':nth-child(13) > .btn');
     }
     DeskripsiBayarSekarangButtonBox(){
-       return cy.get(':nth-child(3) > :nth-child(2) > .text-right > .btn');
+       return cy.get('.modal-body > :nth-child(3) > :nth-child(2) > .text-right > .btn');
     }
     DeskripsiDariTokoButtonBox(){
        return cy.get(':nth-child(19) > .form-group > :nth-child(3)'); 

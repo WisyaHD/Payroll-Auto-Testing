@@ -1,0 +1,31 @@
+========================================
+             NOTA SERVICE                 
+========================================
+No Service       : QC9-SV-230821-0005 
+Tanggal          : 2023-08-21 
+Kode Sales       : BOY 
+Nama Customer    : IRVAN
+No Hp            : 081313979117 
+Alamat Customer  : -
+Total Service    : 200,000 
+========================================
+Keterangan
+========================================
+Nama Barang      : GELANGRANTE1
+Berat            : 1 
+Jumlah           : 1 
+Ongkos           : 200,000 
+Deskripsi        : GELANGRANTEPNYAWISYA
+========================================
+Total Ongkos     : 200,000 
+========================================
+                               TTD       
+                            
+       
+                            
+
+                            
+  
+                          (            )
+
+

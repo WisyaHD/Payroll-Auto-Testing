@@ -19,10 +19,34 @@ describe('AccessMenuTransaksiPenjualan', () => {
         sidemenu.sideMenuPenjualan.selectMenuTransaksiPenjualan(true, "-");
         cy.url().should('include', '/transaksi-penjualan');
         cy.wait(1000);
-        page.penjualanPage.transaksiPenjualanPage.tambahDataCustomerButton();
+        page.penjualanPage.transaksiPenjualanPage.tambahDataCustomerButton().click({force: true});
         cy.wait(1000);
-        page.penjualanPage.transaksiPenjualanPage.modalDataCustomer.salesSelectComboBox().type('Rani{enter}');
+        page.penjualanPage.transaksiPenjualanPage.modalDataCustomer.KodeSalesSelectComboBox().type('Boy{downArrow}{enter}');
+        page.penjualanPage.transaksiPenjualanPage.modalDataCustomer.namaCutomerInputBox().type('ALFI');
+        page.penjualanPage.transaksiPenjualanPage.modalDataCustomer.noHpInputBox().type('0812198328');
+        page.penjualanPage.transaksiPenjualanPage.modalDataCustomer.alamatCustomerInputBox().type('cilengkrang');
+        page.penjualanPage.transaksiPenjualanPage.modalDataCustomer.simpanDataButton().click();
+        cy.wait(1000);
+        page.penjualanPage.transaksiPenjualanPage.tambahBarangButton().click({force: true});
+        cy.wait(1000);
+        page.penjualanPage.transaksiPenjualanPage.modalDataBarang.KodeBarcodeInputBox().type('00000928');
+        cy.wait(5000);
+        page.penjualanPage.transaksiPenjualanPage.modalDataBarang.SimpananDataButtonBox().click({force: true});
+        cy.wait(1500);
+        page.penjualanPage.transaksiPenjualanPage.simpananDataPenjualan().click({force: true});
+        cy.wait(1500);
+        // page.pesananPage.transaksiPesananPage.modalDataSimpananPesanan.DeskripsiNominalInputBox().type('200000', {force: true});
+        page.penjualanPage.transaksiPenjualanPage.modalSimpananPenjualan.SisaButtonBox().click({force: true});
+        page.penjualanPage.transaksiPenjualanPage.modalSimpananPenjualan.DeskripsiTambahTransaksiButtonBox().click({force: true});
+        cy.wait(1000);
+        page.penjualanPage.transaksiPenjualanPage.modalSimpananPenjualan.DeskripsiBayarSekarangButtonBox().click({force: true});
         
+    
+        
+        
+        
+
+
 
         
         

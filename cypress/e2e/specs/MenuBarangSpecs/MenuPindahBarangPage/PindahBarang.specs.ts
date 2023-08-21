@@ -22,7 +22,7 @@ describe('AccessMenuPindahBarang', () => {
         cy.wait(1000);
         page.barangPage.pindahBarangPage.KodeGudangInputBox().type('TOKO-TOKO{downArrow}{enter}');
         page.barangPage.pindahBarangPage.BakiTujuanInputBox().type('TEST TIMBANG BAKI{downArrow}{enter}');
-        page.barangPage.pindahBarangPage.kodeBarcodeInputBox().type('00000730').wait(3500);
+        page.barangPage.pindahBarangPage.kodeBarcodeInputBox().type('00000936').wait(3500);
         page.barangPage.pindahBarangPage.simpanDataButton().click();
         cy.wait(3000);
 

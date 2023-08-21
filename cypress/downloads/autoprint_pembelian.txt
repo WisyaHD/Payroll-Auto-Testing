@@ -1,0 +1,27 @@
+========================================
+                NAMA TOKO                 
+     ALAMAT TOKO                      
+========================================
+            NOTA PEMBELIAN                  
+========================================
+Tanggal          : 2023-08-21 
+Nama Customer    : ALFI
+No Hp            : 0812198328 
+Alamat Customer  : CILENGKRANG
+========================================
+Keterangan                           
+========================================
+No Faktur Beli   : QC9-FB-230821-0004 
+Jenis Barang     : GL 1 
+Kondisi          : MULUS 
+Nama Barang      : GELANG 1
+Berat            : 11.000 Gram
+Harga            : 10,780,000
+Harga Rata       : 980,000 
+========================================
+Total            : 10,780,000 
+========================================
+Harga Waktu Beli : 10,780,000 
+Harga Waktu Jual : 10,780,000 
+========================================
+

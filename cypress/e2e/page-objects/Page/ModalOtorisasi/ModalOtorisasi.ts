@@ -14,4 +14,8 @@ export default class ModalOtorisasi{
     otorisasiButton(){
         return cy.get(':nth-child(6) > .btn');
     }
+    otorasisiBeliButton(){
+        return cy.get('.modal-body > form > .row > :nth-child(6) > .btn');
+    
+    }
 }

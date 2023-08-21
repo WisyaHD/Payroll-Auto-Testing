@@ -1,6 +1,6 @@
 export default class ModalSimpananPenjualan{
     PilihJenisBayarSelectComboBox(){
-       return cy.get(':nth-child(3) > .form-group > .select-search > .select-search__value > .select-search__input');
+       return cy.get(':nth-child(4) > .form-group > .select-search > .select-search__value > .select-search__input');
     }
     NoRekeningSelectComboBox(){
         return cy.get('#nama_bank > .select-search__value > .select-search__input');
@@ -22,13 +22,13 @@ export default class ModalSimpananPenjualan{
         return cy.get('#sisa_bayar');
     }
     DeskripsiTambahTransaksiButtonBox(){
-        return cy.get(':nth-child(1) > .row > .col-12 > .btn');
+        return cy.get(':nth-child(15) > .btn');
     }
     DeskripsiPlusTransaksiButtonBox(){
        return cy.get(':nth-child(13) > .btn');
     }
     DeskripsiBayarSekarangButtonBox(){
-       return cy.get(':nth-child(3) > :nth-child(2) > .text-right > .btn');
+       return cy.get('.modal-body > :nth-child(3) > :nth-child(2) > .text-right > .btn');
     }
     DeskripsiDariTokoButtonBox(){
        return cy.get(':nth-child(19) > .form-group > :nth-child(3)'); 

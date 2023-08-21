@@ -1,6 +1,6 @@
 export default class ModalDataCustomer{
-    salesSelectComboBox(){
-        return cy.get('.css-1wy0on6 > :nth-child(3)');
+    KodeSalesSelectComboBox(){
+        return cy.get('.css-yk16xz-control');
     }
 
     jenisPelangganSelectComboBox(){
@@ -24,6 +24,6 @@ export default class ModalDataCustomer{
     }
 
     simpanDataButton(){
-        return cy.get('.col-4 > .btn');
+        return cy.get(':nth-child(3) > .btn');
     }
 }
