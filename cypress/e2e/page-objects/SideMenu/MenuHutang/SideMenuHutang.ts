@@ -4,7 +4,7 @@ export default class SideMenuHutang extends SideMenuBase{
     selectMenuHutangParent(url: string){
         const splitted = url.split('/');
         const get = splitted[3];
-        this.generateMenu(get, false, 16).click();
+        this.generateMenu(get, false, 17).click();
     }
 
     selectMenuTransaksiHutang(isActive: boolean, url: string = "-"){

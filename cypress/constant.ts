@@ -1,2 +1,100 @@
+import { get } from "cypress/types/lodash";
+import { couldStartTrivia } from "typescript";
 
-export const baseUrl = "https://qc.nagatech.id/";
+const baseUrl = "https://qc.nagatech.id/";
+// const baseUrl = "https://qc-cabang.goldstore.id/";
+const kodeIntern = "KI-212"
+const hargaAtribut = "20000"
+const beratAtribut = getRandomBerat(0.5, 10);
+const beratPlastik = getRandomBerat(1, 10);
+const namaBarang = "Cincin Emas Tua"
+const kodeBarang = "KodeBarang1"
+const username = "helpdesk"
+const password = "helpdesknagatechberasputih"
+const validuser = "helpdesk"
+const validpass  = "helpdesknagatechberasputih"
+const kodeGroup = "MT"
+const kodeJenis = "GLMT"
+const Baki = "BK-GL"
+const berat = getRandomBerat(1, 10);
+const kadar = getRandomKadar(20, 90);
+const namaAtribut = "ACC-CINCIN"
+const kodeBarcode ="00000998"
+const kondisiBarang = "PATAH"
+const contoh = "Contoh"
+const Gudang = "TOKO-TOKO"
+const bakiTujuan = "TEST TIMBANG BAKI"
+const kodeSales = "BOY" 
+const namaCustomer = "iki"
+const noHp = "0851217233"
+const alamat = "cilengkrang no 46"
+const jenisBayarCash = "CASH"
+const jenisBayarTransfer = "TRANSFER"
+const jenisBayarDebit = "DEBIT"
+const jenisBayarKredit = "KREDIT"
+const noRekening = "708956432"
+const card = "89423"
+const nominal = "500000"
+const kondisiBeli = "PRESENTASE"
+const jumlah = getRandomJumlah(1, 10)
+const jumlahHutang = "2500000"
+const bunga = "bunga"
+const LamaPinjam = "20"
+
+
+function getRandomBerat(min: number, max: number){
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (min - max + 1)) + min;
+}
+function getRandomKadar(min: number, max: number){
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (min - max + 1)) + min;
+}
+function getRandomJumlah(min: number, max: number){
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (min - max + 1)) + min;
+}
+
+export {
+    kodeIntern,
+    baseUrl,
+    hargaAtribut,
+    beratAtribut,
+    beratPlastik,
+    kadar, 
+    namaAtribut,
+    namaBarang,
+    kodeBarang,
+    username,
+    password,
+    validuser,
+    validpass,
+    kodeGroup,
+    kodeJenis,
+    Baki,
+    berat,
+    kodeBarcode,
+    kondisiBarang,
+    contoh,
+    Gudang,
+    bakiTujuan, 
+    kodeSales,
+    namaCustomer, 
+    noHp,
+    alamat,
+    jenisBayarTransfer,
+    jenisBayarCash,
+    jenisBayarDebit,
+    jenisBayarKredit,
+    noRekening,
+    card,
+    nominal,
+    kondisiBeli, 
+    jumlah,
+    jumlahHutang,
+    bunga,
+    LamaPinjam,
+}

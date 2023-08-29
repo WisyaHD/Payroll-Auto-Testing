@@ -1,8 +1,9 @@
 import SideMenu from '../../../page-objects/SideMenu/SideMenu';
 import Page from '../../../page-objects/Page/Page';
+import { password, username } from '../../../../constant';
 
-const user_id = "helpdesk";
-const password = "helpdesknagatechberasputih"
+const user_id = `${username}`;
+const pass = `${password}`;
 const sidemenu = new SideMenu();
 const page = new Page();
 
@@ -19,7 +20,7 @@ describe('AccessMenuTransaksiPembelian', () => {
         sidemenu.sideMenuPembelian.selectMenuTransaksiPembelian(true, "-");
         cy.url().should('include', '/transaksi-pembelian');
         cy.wait(1000);
-        page.pembelianPage.transaksiPembelianPage.KodeBarcodeInputBox().type('00000929');
+        page.pembelianPage.transaksiPembelianPage.KodeBarcodeInputBox().type('00000981');
         cy.wait(3000);
         page.pembelianPage.transaksiPembelianPage.TypeKondisiSelectComboBox().type('RP{downArrow}{enter}')
         page.pembelianPage.transaksiPembelianPage.KondisiSelectComboBox().type('MULUS{DownArrow}{enter}');

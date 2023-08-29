@@ -4,24 +4,25 @@
 ========================================
             NOTA PEMBELIAN                  
 ========================================
-Tanggal          : 2023-08-21 
+Tanggal          : 2023-08-24 
 Nama Customer    : ALFI
 No Hp            : 0812198328 
 Alamat Customer  : CILENGKRANG
 ========================================
 Keterangan                           
 ========================================
-No Faktur Beli   : QC9-FB-230821-0004 
-Jenis Barang     : GL 1 
+No Faktur Beli   : QC9-FB-230824-0002 
+Jenis Barang     : GLMT 
 Kondisi          : MULUS 
-Nama Barang      : GELANG 1
-Berat            : 11.000 Gram
-Harga            : 10,780,000
-Harga Rata       : 980,000 
+Nama Barang      : GELANG KERONCONG EMA
+                   S TUA 
+Berat            : 2.500 Gram
+Harga            : 2,550,000
+Harga Rata       : 1,020,000 
 ========================================
-Total            : 10,780,000 
+Total            : 2,550,000 
 ========================================
-Harga Waktu Beli : 10,780,000 
-Harga Waktu Jual : 10,780,000 
+Harga Waktu Beli : 2,550,000 
+Harga Waktu Jual : 2,550,000 
 ========================================
 

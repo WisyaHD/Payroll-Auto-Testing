@@ -4,7 +4,7 @@ export default class SideMenuPenjualan extends SideMenuBase{
     selectMenuPenjualanParent(url: string){
         const splitted = url.split('/');
         const get = splitted[3];
-        this.generateMenu(get, false, 10).click();
+        this.generateMenu(get, true, 11).click({force: true});
     }
 
     selectMenuTransaksiPenjualan(isActive: boolean, url: string = "-"){

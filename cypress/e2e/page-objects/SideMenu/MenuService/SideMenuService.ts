@@ -4,7 +4,7 @@ export default class SideMenuService extends SideMenuBase{
     selectMenuServiceParent(url: string){
         const splitted = url.split('/');
         const get = splitted[3];
-        this.generateMenu(get, false, 15).click();
+        this.generateMenu(get, false, 16).click();
     }
 
     selectMenuTransaksiService(isActive: boolean, url: string = "-"){

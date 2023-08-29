@@ -1,6 +1,6 @@
 export default class ModalDataBarang{
     KodeBarcodeInputBox(){
-       return cy.get('#kode_barcode');
+       return cy.get('#kode_dari_toko');
     }
 
     KategoriSelectComboBox(){

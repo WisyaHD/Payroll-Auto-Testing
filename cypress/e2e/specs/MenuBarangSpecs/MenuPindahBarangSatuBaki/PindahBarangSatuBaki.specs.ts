@@ -1,9 +1,10 @@
 import SideMenu from '../../../page-objects/SideMenu/SideMenu';
 import Page from '../../../page-objects/Page/Page';
 import { type } from 'os';
+import { Baki, Gudang, password, username } from '../../../../constant';
 
-const user_id = "helpdesk";
-const password = "helpdesknagatechberasputih"
+const user_id = `${username}`;
+const pass = `${password}`;
 const sidemenu = new SideMenu();
 const page = new Page();
 
@@ -20,11 +21,11 @@ describe('AccessMenuPindahBarangSatuBaki', () => {
         sidemenu.sideMenuBarang.selectMenuPindahBarangSatuBaki(true, "-");
         cy.url().should('include', '/pindah-barang-satu-baki');
         cy.wait(1000);
-        page.barangPage.pindahBarangSatuBakiPage.GudangAsalInputBox().type('TOKO-TOKO{downArrow}{enter}');
-        page.barangPage.pindahBarangSatuBakiPage.BakiAsalInputBox().type('BK-GL{downArrow}{enter}');
+        page.barangPage.pindahBarangSatuBakiPage.GudangAsalInputBox().type(`${Gudang}{downArrow}{enter}`);
+        page.barangPage.pindahBarangSatuBakiPage.BakiAsalInputBox().type(`${Baki}{downArrow}{enter}`);
         page.barangPage.pindahBarangSatuBakiPage.CariDataButtonBox().click();
-        page.barangPage.pindahBarangSatuBakiPage.GudangTujuanInputBox().type('TOKO-TOKO{downArrow}{enter}');
-        page.barangPage.pindahBarangSatuBakiPage.BakiTujuanInputBox().type('TEST TIMBANG BAKI{downArrow}{enter}');
+        page.barangPage.pindahBarangSatuBakiPage.GudangTujuanInputBox().type(`${Gudang}{downArrow}{enter}`);
+        page.barangPage.pindahBarangSatuBakiPage.BakiTujuanInputBox().type(`${Baki}TEST TIMBANG BAKI{downArrow}{enter}`);
         page.barangPage.pindahBarangSatuBakiPage.SimpanDataButtonBox().click();
         cy.wait(3000);
 

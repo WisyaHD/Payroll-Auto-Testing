@@ -1,8 +1,8 @@
 ========================================
              NOTA SERVICE                 
 ========================================
-No Service       : QC9-SV-230821-0005 
-Tanggal          : 2023-08-21 
+No Service       : QC9-SV-230824-0005 
+Tanggal          : 2023-08-24 
 Kode Sales       : BOY 
 Nama Customer    : IRVAN
 No Hp            : 081313979117 

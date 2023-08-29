@@ -1,8 +1,9 @@
 import SideMenu from '../../page-objects/SideMenu/SideMenu';
 import Page from '../../page-objects/Page/Page';
+import { LamaPinjam, berat, bunga, jumlah, jumlahHutang, kadar, kodeGroup, namaBarang, namaCustomer, noHp, password, username } from '../../../constant';
 
-const user_id = "helpdesk";
-const password = "helpdesknagatechberasputih"
+const user_id = `${username}`;
+const pass = `${password}`;
 const sidemenu = new SideMenu();
 const page = new Page();
 
@@ -27,27 +28,27 @@ describe('AccessMenuTransaksiHutang', () => {
             cy.log(`TambahDataCustomerOpts: ${KodeSalesSelectComboBoxOpts}`);
         cy.wait(1000);
         page.hutangPage.transaksiHutangPage.modalDataCustomer.KodeSalesSelectComboBox().type(KodeSalesSelectComboBoxOpts);
-        page.hutangPage.transaksiHutangPage.modalDataCustomer.namaCutomerInputBox().type('IRVAN');
-        page.hutangPage.transaksiHutangPage.modalDataCustomer.noHpInputBox().type('081313979117');
+        page.hutangPage.transaksiHutangPage.modalDataCustomer.namaCutomerInputBox().type(`${namaCustomer}`);
+        page.hutangPage.transaksiHutangPage.modalDataCustomer.noHpInputBox().type(`${noHp}`);
         page.hutangPage.transaksiHutangPage.modalDataCustomer.simpanDataButton().click();
         cy.wait (1000);
         page.hutangPage.transaksiHutangPage.tambahDataBarangButton();
         cy.wait(1000);
-        page.hutangPage.transaksiHutangPage.modalDataBarang.KodeGroupComboBox().type('MT{downArrow}{enter}');
-        page.hutangPage.transaksiHutangPage.modalDataBarang.NamaBarangInputBox().type('CINCIN EMAS TUA');
-        page.hutangPage.transaksiHutangPage.modalDataBarang.BeratBarangInputBox().type('5');
-        page.hutangPage.transaksiHutangPage.modalDataBarang.KadarInputBox().type('100');
-        page.hutangPage.transaksiHutangPage.modalDataBarang.JumlahInputBox().type('1');
+        page.hutangPage.transaksiHutangPage.modalDataBarang.KodeGroupComboBox().type(`${kodeGroup}{downArrow}{enter}`);
+        page.hutangPage.transaksiHutangPage.modalDataBarang.NamaBarangInputBox().type(`${namaBarang}`);
+        page.hutangPage.transaksiHutangPage.modalDataBarang.BeratBarangInputBox().type(`${berat}`);
+        page.hutangPage.transaksiHutangPage.modalDataBarang.KadarInputBox().type(`${kadar}`);
+        page.hutangPage.transaksiHutangPage.modalDataBarang.JumlahInputBox().type(`${jumlah}`);
         page.hutangPage.transaksiHutangPage.modalDataBarang.SimpanDataButton().click();
         cy.wait(1000);
         page.hutangPage.transaksiHutangPage.tambahDataHutangButton().click({force: true});
         cy.wait(1000);
-        page.hutangPage.transaksiHutangPage.modalDataHutang.JumlahHutangInputBox().type('2500000');
+        page.hutangPage.transaksiHutangPage.modalDataHutang.JumlahHutangInputBox().type(`${jumlahHutang}`);
         cy.wait(1000);
-        page.hutangPage.transaksiHutangPage.modalDataHutang.BungaPerBulanInputBox().type('5');
-        page.hutangPage.transaksiHutangPage.modalDataHutang.LamaPinjamInputBox().clear().type('15');
+        page.hutangPage.transaksiHutangPage.modalDataHutang.BungaPerBulanInputBox().type(`${bunga}`);
+        page.hutangPage.transaksiHutangPage.modalDataHutang.LamaPinjamInputBox().clear().type(`${LamaPinjam}`);
         cy.wait(1000);
-        page.hutangPage.transaksiHutangPage.modalDataHutang.BungaPerBulanInputBox().type('5');
+        page.hutangPage.transaksiHutangPage.modalDataHutang.BungaPerBulanInputBox().type(`${bunga}`);
         page.hutangPage.transaksiHutangPage.modalDataHutang.SimpanDataButton(); 
         cy.wait(3000);
         

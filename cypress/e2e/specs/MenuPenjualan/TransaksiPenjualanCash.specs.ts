@@ -1,8 +1,9 @@
 import SideMenu from '../../page-objects/SideMenu/SideMenu';
 import Page from '../../page-objects/Page/Page';
+import { alamat, kodeSales, namaCustomer, noHp, password, username } from '../../../constant';
 
-const user_id = "helpdesk";
-const password = "helpdesknagatechberasputih"
+const user_id = `${username}`;
+const pass = `${password}`;
 const sidemenu = new SideMenu();
 const page = new Page();
 
@@ -21,15 +22,15 @@ describe('AccessMenuTransaksiPenjualan', () => {
         cy.wait(1000);
         page.penjualanPage.transaksiPenjualanPage.tambahDataCustomerButton().click({force: true});
         cy.wait(1000);
-        page.penjualanPage.transaksiPenjualanPage.modalDataCustomer.KodeSalesSelectComboBox().type('Boy{downArrow}{enter}');
-        page.penjualanPage.transaksiPenjualanPage.modalDataCustomer.namaCutomerInputBox().type('ALFI');
-        page.penjualanPage.transaksiPenjualanPage.modalDataCustomer.noHpInputBox().type('0812198328');
-        page.penjualanPage.transaksiPenjualanPage.modalDataCustomer.alamatCustomerInputBox().type('cilengkrang');
+        page.penjualanPage.transaksiPenjualanPage.modalDataCustomer.KodeSalesSelectComboBox().type(`${kodeSales}{downArrow}{enter}`);
+        page.penjualanPage.transaksiPenjualanPage.modalDataCustomer.namaCutomerInputBox().type(`${namaCustomer}`);
+        page.penjualanPage.transaksiPenjualanPage.modalDataCustomer.noHpInputBox().type(`${noHp}`);
+        page.penjualanPage.transaksiPenjualanPage.modalDataCustomer.alamatCustomerInputBox().type(`${alamat}`);
         page.penjualanPage.transaksiPenjualanPage.modalDataCustomer.simpanDataButton().click();
         cy.wait(1000);
         page.penjualanPage.transaksiPenjualanPage.tambahBarangButton().click({force: true});
         cy.wait(1000);
-        page.penjualanPage.transaksiPenjualanPage.modalDataBarang.KodeBarcodeInputBox().type('00000928');
+        page.penjualanPage.transaksiPenjualanPage.modalDataBarang.KodeBarcodeInputBox().type('00001006');
         cy.wait(5000);
         page.penjualanPage.transaksiPenjualanPage.modalDataBarang.SimpananDataButtonBox().click({force: true});
         cy.wait(1500);

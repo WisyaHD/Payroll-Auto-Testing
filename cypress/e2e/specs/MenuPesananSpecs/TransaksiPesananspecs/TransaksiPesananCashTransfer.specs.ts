@@ -1,8 +1,9 @@
 import SideMenu from '../../../page-objects/SideMenu/SideMenu';
 import Page from '../../../page-objects/Page/Page';
+import { password, username } from '../../../../constant';
 
-const user_id = "helpdesk";
-const password = "helpdesknagatechberasputih"
+const user_id = `${username}`;
+const pass = `${password}`;
 const sidemenu = new SideMenu();
 const page = new Page();
 
@@ -43,7 +44,7 @@ describe('AccessMenuTransaksiPesanan', () => {
         page.pesananPage.transaksiPesananPage.modalDataSimpananPesanan.NoRekeningSelectComboBox().type('708956432{downArrow}{enter}',{force: true});
         page.pesananPage.transaksiPesananPage.modalDataSimpananPesanan.CardNoInputBox().type('89423', {force: true});
         page.pesananPage.transaksiPesananPage.modalDataSimpananPesanan.SisaButtonBox().click({force: true});
-        page.pesananPage.transaksiPesananPage.modalDataSimpananPesanan.DeskripsiTambahTransaksiButtonBox().click();
+        page.pesananPage.transaksiPesananPage.modalDataSimpananPesanan.DeskripsiPlusTransaksiButtonBox().click();
         cy.wait(1000);
         page.pesananPage.transaksiPesananPage.modalDataSimpananPesanan.DeskripsiBayarSekarangButtonBox().click();
         

@@ -1,15 +1,15 @@
 ========================================
                NOTA PESANAN             
 ========================================
-Tanggal          : 2023-08-21 
-Nama Customer    : TEST 
-No Hp            : 1 
+Tanggal          : 2023-08-27 
+Nama Customer    : IRVAN 
+No Hp            : 081313979117 
 ========================================
 Keterangan
 ========================================
-No Faktur Pesanan  : DP-230821-0007 
-Dp                 : 980,000 
-Estimasi Pesanan   : 2023-08-21 
+No Faktur Pesanan  : DP-230827-0004 
+Dp                 : 4,700,000 
+Estimasi Pesanan   : 2023-08-27 
 ========================================    
                               TTD       
                             

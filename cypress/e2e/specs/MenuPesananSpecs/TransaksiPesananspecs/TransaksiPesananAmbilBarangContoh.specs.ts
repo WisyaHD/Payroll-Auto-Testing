@@ -1,7 +1,6 @@
 import SideMenu from '../../../page-objects/SideMenu/SideMenu';
 import Page from '../../../page-objects/Page/Page';
-import { cli } from 'cypress';
-import { password, username } from '../../../../constant';
+import { kodeBarcode, password, username } from '../../../../constant';
 
 const user_id = `${username}`;
 const pass = `${password}`;
@@ -34,20 +33,19 @@ describe('AccessMenuTransaksiPesanan', () => {
         page.pesananPage.transaksiPesananPage.modalDataBarang.NamaBarangInputBox().type('CINCIN EMAS TUA');
         page.pesananPage.transaksiPesananPage.modalDataBarang.BeratInputBox().type('5');
         page.pesananPage.transaksiPesananPage.modalDataBarang.DeskripsiPesananInputBox().type('CINCIN EMAS TUA');
+        page.pesananPage.transaksiPesananPage.modalDataBarang.DeskripsiDariTokoButtonBox().click();
+        page.pesananPage.transaksiPesananPage.modalDataBarang.KodeBarcodeInputBox().type(`${kodeBarcode}`, {force: true});
+        cy.wait(1000);
         page.pesananPage.transaksiPesananPage.modalDataBarang.DeskripsiAddButtonBox().click();
         cy.wait(1000);
         page.pesananPage.transaksiPesananPage.SimpananPesanan().click({force: true});
         cy.wait(1000);
-        page.pesananPage.transaksiPesananPage.modalDataSimpananPesanan.DeskripsiNominalInputBox().type('2000000', {force: true});
+        // page.pesananPage.transaksiPesananPage.modalDataSimpananPesanan.DeskripsiNominalInputBox().type('200000', {force: true});
+        page.pesananPage.transaksiPesananPage.modalDataSimpananPesanan.SisaButtonBox().click({force: true});
         page.pesananPage.transaksiPesananPage.modalDataSimpananPesanan.DeskripsiTambahTransaksiButtonBox().click();
         cy.wait(1000);
-        page.pesananPage.transaksiPesananPage.modalDataSimpananPesanan.PilihJenisBayarSelectComboBox().type('DEBIT{downArrow}{enter}',{force: true});
-        page.pesananPage.transaksiPesananPage.modalDataSimpananPesanan.NoRekeningSelectComboBox().type('708956432{downArrow}{enter}',{force: true});
-        page.pesananPage.transaksiPesananPage.modalDataSimpananPesanan.SisaButtonBox().click({force: true});
-        page.pesananPage.transaksiPesananPage.modalDataSimpananPesanan.DeskripsiPlusTransaksiButtonBox().click({force: true});
-        cy.wait(1000);
         page.pesananPage.transaksiPesananPage.modalDataSimpananPesanan.DeskripsiBayarSekarangButtonBox().click();
+        cy.wait(1000);
         
-
     })
 })

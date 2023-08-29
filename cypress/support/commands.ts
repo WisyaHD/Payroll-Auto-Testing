@@ -42,10 +42,21 @@ declare global {
     namespace Cypress {
         interface Chainable {
             login: typeof login,
+            login1: typeof login1
         }
     }
 }
-
+const login1 = (validuser1: string, validpass1: string) => {
+    cy.session(validuser1, () => {
+        cy.visit('/');
+        cy.get("input[name=validuser1]").type(validuser1);
+        cy.get("input[name=validpass1]").type(validpass1);
+        cy.get("button").click();
+        cy.url().should('include', '/dashboard');
+    },{
+        cacheAcrossSpecs: true
+    });
+}
 const login = (user_id: string, password: string) => {
     cy.session(user_id, () => {
         cy.visit('/');
