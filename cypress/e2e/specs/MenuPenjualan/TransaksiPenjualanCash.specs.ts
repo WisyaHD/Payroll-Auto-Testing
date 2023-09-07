@@ -7,6 +7,8 @@ const pass = `${password}`;
 const sidemenu = new SideMenu();
 const page = new Page();
 
+let kode_barcode: string;
+
 describe('AccessMenuTransaksiPenjualan', () => {
     beforeEach(() => {
         cy.login(user_id, password);
@@ -15,11 +17,18 @@ describe('AccessMenuTransaksiPenjualan', () => {
         cy.visit('/dashboard');
         cy.url().should('include', '/dashboard');
         cy.url().then((url: any) => {
-            sidemenu.sideMenuPenjualan.selectMenuPenjualanParent(url);
+            sidemenu.sideMenuBarang.selectMenuBarangParent(url);
         });
-        sidemenu.sideMenuPenjualan.selectMenuTransaksiPenjualan(true, "-");
-        cy.url().should('include', '/transaksi-penjualan');
+        sidemenu.sideMenuBarang.selectMenuDataBarang(true, "-")
+        cy.url().should('include', '/data-barang');
         cy.wait(1000);
+        cy.get('tbody > :nth-child(1) > :nth-child(2)').then($value => {
+            kode_barcode = `${$value.text()}`;
+            cy.log(($value.text()));
+        })
+        cy.visit('/transaksi-penjualan');
+        cy.url().should('include', '/transaksi-penjualan')
+        cy.wait(1500);
         page.penjualanPage.transaksiPenjualanPage.tambahDataCustomerButton().click({force: true});
         cy.wait(1000);
         page.penjualanPage.transaksiPenjualanPage.modalDataCustomer.KodeSalesSelectComboBox().type(`${kodeSales}{downArrow}{enter}`);
@@ -30,12 +39,12 @@ describe('AccessMenuTransaksiPenjualan', () => {
         cy.wait(1000);
         page.penjualanPage.transaksiPenjualanPage.tambahBarangButton().click({force: true});
         cy.wait(1000);
-        page.penjualanPage.transaksiPenjualanPage.modalDataBarang.KodeBarcodeInputBox().type('00001006');
-        cy.wait(5000);
+        page.penjualanPage.transaksiPenjualanPage.modalDataBarang.KodeBarcodeInputBox().type(`${kode_barcode}` , {force: true});
+        cy.wait(3000);
         page.penjualanPage.transaksiPenjualanPage.modalDataBarang.SimpananDataButtonBox().click({force: true});
         cy.wait(1500);
         page.penjualanPage.transaksiPenjualanPage.simpananDataPenjualan().click({force: true});
-        cy.wait(1500);
+        cy.wait(1500);  
         // page.pesananPage.transaksiPesananPage.modalDataSimpananPesanan.DeskripsiNominalInputBox().type('200000', {force: true});
         page.penjualanPage.transaksiPenjualanPage.modalSimpananPenjualan.SisaButtonBox().click({force: true});
         page.penjualanPage.transaksiPenjualanPage.modalSimpananPenjualan.DeskripsiTambahTransaksiButtonBox().click({force: true});

@@ -1,6 +1,6 @@
 import SideMenu from '../../../page-objects/SideMenu/SideMenu';
 import Page from '../../../page-objects/Page/Page';
-import { bunga, card, jenisBayarDebit, jenisBayarKredit, password, username } from '../../../../constant';
+import { DeskripsiNominal, bunga, card, jenisBayarDebit, jenisBayarKredit, noRekening, nominal, password, username } from '../../../../constant';
 
 const user_id = `${username}`;
 const pass = `${password}`;
@@ -27,11 +27,11 @@ describe('AccessMenuLihatHutang', () => {
         cy.wait(1000);
         page.hutangPage.lihatHutangPage.modalPelunasanHutang.PelunasanHutangButton().click();
         cy.wait(1000);
-        page.hutangPage.lihatHutangPage.modalPelunasanHutang.modalPelunasanHutangPembayaran.DeskripsiNominalInputBox().type('500000', {force: true});
+        page.hutangPage.lihatHutangPage.modalPelunasanHutang.modalPelunasanHutangPembayaran.DeskripsiNominalInputBox().type(`${DeskripsiNominal}`, {force: true});
         page.hutangPage.lihatHutangPage.modalPelunasanHutang.modalPelunasanHutangPembayaran.DeskripsiTambahTransaksiButtonBox().click({force: true});
         cy.wait(1000);
         page.hutangPage.lihatHutangPage.modalPelunasanHutang.modalPelunasanHutangPembayaran.PilihJenisBayarSelectComboBox().type(`${jenisBayarDebit}{downArrow}{enter}`,{force: true});
-        page.hutangPage.lihatHutangPage.modalPelunasanHutang.modalPelunasanHutangPembayaran.NoRekeningSelectComboBox().type('708956432{downArrow}{enter}',{force: true});
+        page.hutangPage.lihatHutangPage.modalPelunasanHutang.modalPelunasanHutangPembayaran.NoRekeningSelectComboBox().type(`${noRekening}{downArrow}{enter}`,{force: true});
         page.hutangPage.lihatHutangPage.modalPelunasanHutang.modalPelunasanHutangPembayaran.CardNoInputBox().type(`${card}`, {force: true});
         page.hutangPage.lihatHutangPage.modalPelunasanHutang.modalPelunasanHutangPembayaran.FeeInputBox().type(`${bunga}`, {force: true});
         page.hutangPage.lihatHutangPage.modalPelunasanHutang.modalPelunasanHutangPembayaran.SisaButtonBox().click({force: true});

@@ -4,7 +4,7 @@ export default class AmbilBarangContohPage{
     }
 
     CariButton(){
-        return cy.get('.col-4.mt-4 > .btn');
+        return cy.get('.col-4.mt-4 > .btn');    
    
     }
     batalPesananButton(){

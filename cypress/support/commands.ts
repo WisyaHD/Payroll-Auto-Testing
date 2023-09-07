@@ -57,6 +57,9 @@ const login1 = (validuser1: string, validpass1: string) => {
         cacheAcrossSpecs: true
     });
 }
+Cypress.Commands.addAll({
+    login1,
+})
 const login = (user_id: string, password: string) => {
     cy.session(user_id, () => {
         cy.visit('/');

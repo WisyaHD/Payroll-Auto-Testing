@@ -22,7 +22,7 @@ export default class ModalSimpananPenjualan{
         return cy.get('#sisa_bayar');
     }
     DeskripsiTambahTransaksiButtonBox(){
-        return cy.get(':nth-child(15) > .btn');
+        return cy.get(':nth-child(16) > .btn');
     }
     DeskripsiPlusTransaksiButtonBox(){
        return cy.get(':nth-child(13) > .btn');

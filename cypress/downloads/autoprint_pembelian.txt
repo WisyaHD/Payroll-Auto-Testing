@@ -4,25 +4,27 @@
 ========================================
             NOTA PEMBELIAN                  
 ========================================
-Tanggal          : 2023-08-24 
-Nama Customer    : ALFI
-No Hp            : 0812198328 
-Alamat Customer  : CILENGKRANG
+Tanggal          : 2023-09-07 
+Nama Customer    : REGULER
+No Hp            : - 
+Alamat Customer  : -
 ========================================
 Keterangan                           
 ========================================
-No Faktur Beli   : QC9-FB-230824-0002 
+No Faktur Beli   : QCN-FB-230907-0005 
 Jenis Barang     : GLMT 
 Kondisi          : MULUS 
 Nama Barang      : GELANG KERONCONG EMA
                    S TUA 
-Berat            : 2.500 Gram
-Harga            : 2,550,000
-Harga Rata       : 1,020,000 
+Berat            : 2.530 Gram
+Harga            : 2,578,500
+Harga Rata       : 1,019,170 
 ========================================
-Total            : 2,550,000 
+Total            : 2,578,500 
+Total Berat      : 2.530
+Total RP         : 2,578,500
 ========================================
-Harga Waktu Beli : 2,550,000 
-Harga Waktu Jual : 2,550,000 
+Harga Waktu Beli : 2,578,500 
+Harga Waktu Jual : 2,578,500 
 ========================================
 

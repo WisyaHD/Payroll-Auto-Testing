@@ -19,7 +19,7 @@ const Baki = "BK-GL"
 const berat = getRandomBerat(1, 10);
 const kadar = getRandomKadar(20, 90);
 const namaAtribut = "ACC-CINCIN"
-const kodeBarcode ="00000998"
+const kodeBarcode ="00001073"
 const kondisiBarang = "PATAH"
 const contoh = "Contoh"
 const Gudang = "TOKO-TOKO"
@@ -40,6 +40,10 @@ const jumlah = getRandomJumlah(1, 10)
 const jumlahHutang = "2500000"
 const bunga = "bunga"
 const LamaPinjam = "20"
+const DeskripsiNominal = "500000"
+const kategori = "MT"
+const deskripsiPesanan = "Cincin Mas Tua"
+const ongkos = "1000000"
 
 
 function getRandomBerat(min: number, max: number){
@@ -97,4 +101,8 @@ export {
     jumlahHutang,
     bunga,
     LamaPinjam,
+    DeskripsiNominal, 
+    kategori,
+    deskripsiPesanan,
+    ongkos, 
 }

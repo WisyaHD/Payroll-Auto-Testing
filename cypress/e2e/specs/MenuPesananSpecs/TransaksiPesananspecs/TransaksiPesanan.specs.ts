@@ -1,6 +1,6 @@
 import SideMenu from '../../../page-objects/SideMenu/SideMenu';
 import Page from '../../../page-objects/Page/Page';
-import { password, username } from '../../../../constant';
+import { berat, deskripsiPesanan, kategori, kodeSales, namaBarang, namaCustomer, noHp, password, username } from '../../../../constant';
 
 const user_id = `${username}`;
 const pass = `${password}`;
@@ -22,17 +22,17 @@ describe('AccessMenuTransaksiPesanan', () => {
         cy.wait(1000);
         page.pesananPage.transaksiPesananPage.tambahDataCustomerButton();
         cy.wait(1000);
-        page.pesananPage.transaksiPesananPage.modalDataCustomer.KodeSalesSelectComboBox().type('BOY{enter}');
-        page.pesananPage.transaksiPesananPage.modalDataCustomer.namaCutomerInputBox().type('IRVAN');
-        page.pesananPage.transaksiPesananPage.modalDataCustomer.noHpInputBox().type('081313979117');
+        page.pesananPage.transaksiPesananPage.modalDataCustomer.KodeSalesSelectComboBox().type(`${kodeSales}{enter}`);
+        page.pesananPage.transaksiPesananPage.modalDataCustomer.namaCutomerInputBox().type(`${namaCustomer}`);
+        page.pesananPage.transaksiPesananPage.modalDataCustomer.noHpInputBox().type(`${noHp}`);
         page.pesananPage.transaksiPesananPage.modalDataCustomer.simpanDataButton().click();
         cy.wait (1000);
         page.pesananPage.transaksiPesananPage.tambahDataBarangButton();
         cy.wait(1000);
-        page.pesananPage.transaksiPesananPage.modalDataBarang.KategoriSelectComboBox().type('MT{downArrow}{enter}');
-        page.pesananPage.transaksiPesananPage.modalDataBarang.NamaBarangInputBox().type('CINCIN EMAS TUA');
-        page.pesananPage.transaksiPesananPage.modalDataBarang.BeratInputBox().type('5');
-        page.pesananPage.transaksiPesananPage.modalDataBarang.DeskripsiPesananInputBox().type('CINCIN EMAS TUA');
+        page.pesananPage.transaksiPesananPage.modalDataBarang.KategoriSelectComboBox().type(`${kategori}{downArrow}{enter}`);
+        page.pesananPage.transaksiPesananPage.modalDataBarang.NamaBarangInputBox().type(`${namaBarang}`);
+        page.pesananPage.transaksiPesananPage.modalDataBarang.BeratInputBox().type(`${berat}`);
+        page.pesananPage.transaksiPesananPage.modalDataBarang.DeskripsiPesananInputBox().type(`${deskripsiPesanan}`);
         page.pesananPage.transaksiPesananPage.modalDataBarang.DeskripsiAddButtonBox().click();
         cy.wait(1000);
         page.pesananPage.transaksiPesananPage.SimpananPesanan().click({force: true});

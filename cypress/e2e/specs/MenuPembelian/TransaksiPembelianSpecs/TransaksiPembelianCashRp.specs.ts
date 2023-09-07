@@ -20,7 +20,7 @@ describe('AccessMenuTransaksiPembelian', () => {
         sidemenu.sideMenuPembelian.selectMenuTransaksiPembelian(true, "-");
         cy.url().should('include', '/transaksi-pembelian');
         cy.wait(1000);
-        page.pembelianPage.transaksiPembelianPage.KodeBarcodeInputBox().type('00000983');
+        page.pembelianPage.transaksiPembelianPage.KodeBarcodeInputBox().type('00001081  ');
         cy.wait(3000);
         page.pembelianPage.transaksiPembelianPage.TypeKondisiSelectComboBox().type('RP{downArrow}{enter}')
         page.pembelianPage.transaksiPembelianPage.KondisiSelectComboBox().type('MULUS{DownArrow}{enter}');

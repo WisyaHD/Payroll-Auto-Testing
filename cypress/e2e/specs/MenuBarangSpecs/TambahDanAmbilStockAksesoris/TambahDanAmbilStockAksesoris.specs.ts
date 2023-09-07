@@ -26,7 +26,7 @@ describe('AccessMenuTambahDanAmbilStockAksesoris', () => {
         page.barangPage.tambahDanAmbilStockAksesorisPage.TambahStockInputBox().type('5');
         page.barangPage.tambahDanAmbilStockAksesorisPage.simpanDataButton().click();
         cy.wait(3000);
-        page.barangPage.tambahDanAmbilStockAksesorisPage.KodeBarcodeInputBox().type('00000738').wait(2000);
+        page.barangPage.tambahDanAmbilStockAksesorisPage.KodeBarcodeInputBox().type('00000916').wait(2000);
         page.barangPage.tambahDanAmbilStockAksesorisPage.TypeInputBox().type('AMBIL{downArrow}{enter}');
         page.barangPage.tambahDanAmbilStockAksesorisPage.TambahStockInputBox().type('5');
         page.barangPage.tambahDanAmbilStockAksesorisPage.simpanDataButton().click();
