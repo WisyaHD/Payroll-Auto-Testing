@@ -1,8 +1,9 @@
 import SideMenu from '../../../page-objects/SideMenu/SideMenu';
 import Page from '../../../page-objects/Page/Page';
+import { password, username } from '../../../../constant';
 
-const user_id = "helpdesk";
-const password = "helpdesknagatechberasputih"
+const user_id = `${username}`;
+const pass = `${password}`;
 const sidemenu = new SideMenu();
 const page = new Page();
 
@@ -18,10 +19,10 @@ describe('AccessMenuTambahBarang', () => {
         });
         sidemenu.sideMenuBarang.selectMenuTambahBarang(true, "-");
         cy.url().should('include', '/tambah-data-barang');
-        cy.wait(2000);
+        cy.wait(1000);
         page.barangPage.tambahBarangPage.kodeGroupSelectBox().type('MT{downArrow}{enter}');
         page.barangPage.tambahBarangPage.kodeJenisSelectBox().type('GLMT{downArrow}{enter}');
-        cy.wait(2000);
+        cy.wait(1000);
         page.barangPage.tambahBarangPage.kodeBakiSelectBox().type('BK-GL{downArrow}{enter}');
         var kode_intern = "KI-211";
         for(var i = 1; i <= 10; i++){

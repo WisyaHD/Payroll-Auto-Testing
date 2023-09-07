@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-09-06T09:05:42.410Z",
+    "end": "2023-09-06T09:06:05.099Z",
+    "duration": 22689,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b345e5d6-4394-4090-929a-aedd02cf5623",
+      "title": "",
+      "fullFile": "cypress\\e2e\\specs\\MenuServiceSpecs\\TransaksiServiceSpecs\\TransaksiServiceTransferDebitCredit.specs.ts",
+      "file": "cypress\\e2e\\specs\\MenuServiceSpecs\\TransaksiServiceSpecs\\TransaksiServiceTransferDebitCredit.specs.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e509effd-1858-4ddc-a14b-fd15e343dda9",
+          "title": "AccessMenuTransaksiService",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "click menu",
+              "fullTitle": "AccessMenuTransaksiService click menu",
+              "timedOut": null,
+              "duration": 22481,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/dashboard');\ncy.url().should('include', '/dashboard');\ncy.url().then((url) => {\n    sidemenu.sideMenuService.selectMenuServiceParent(url);\n});\nsidemenu.sideMenuService.selectMenuTransaksiService(true, \"-\");\ncy.url().should('include', '/transaksi-service');\ncy.wait(1000);\npage.servicePage.transaksiServicePage.tambahDataCustomerButton();\ncy.wait(1000);\npage.servicePage.transaksiServicePage.modalDataCustomer.KodeSalesSelectComboBox().type(`${constant_1.kodeSales}{enter}`);\npage.servicePage.transaksiServicePage.modalDataCustomer.namaCutomerInputBox().type(`${constant_1.namaCustomer}`);\npage.servicePage.transaksiServicePage.modalDataCustomer.noHpInputBox().type(`${constant_1.noHp}`);\npage.servicePage.transaksiServicePage.modalDataCustomer.simpanDataButton().click();\ncy.wait(1000);\npage.servicePage.transaksiServicePage.tambahDataBarangButton();\npage.servicePage.transaksiServicePage.modalDataBarang.NamaBarangInputBox().type(`${constant_1.namaBarang}`);\npage.servicePage.transaksiServicePage.modalDataBarang.BeratBarangInputBox().type(`${constant_1.berat}`);\npage.servicePage.transaksiServicePage.modalDataBarang.OngkosInputBox().type(`${constant_1.ongkos}`);\npage.servicePage.transaksiServicePage.modalDataBarang.DeskripsiInputBox().type(`${constant_1.deskripsiPesanan}`);\npage.servicePage.transaksiServicePage.modalDataBarang.SimpanDataButton().click();\ncy.wait(1000);\npage.servicePage.transaksiServicePage.SimpanDataServiceButton().click({ force: true });\ncy.wait(1000);\npage.servicePage.transaksiServicePage.modalSimpananService.PilihJenisBayarSelectComboBox().type(`${constant_1.jenisBayarTransfer}{downArrow}{enter}`, { force: true });\npage.servicePage.transaksiServicePage.modalSimpananService.NoRekeningSelectComboBox().type(`${constant_1.noRekening}{downArrow}{enter}`, { force: true });\npage.servicePage.transaksiServicePage.modalSimpananService.CardNoInputBox().type(`${constant_1.card}`, { force: true });\npage.servicePage.transaksiServicePage.modalSimpananService.DeskripsiNominalInputBox().type(`${constant_1.DeskripsiNominal}`, { force: true });\npage.servicePage.transaksiServicePage.modalSimpananService.DeskripsiTambahTransaksiButtonBox().click();\ncy.wait(1000);\npage.servicePage.transaksiServicePage.modalSimpananService.PilihJenisBayarSelectComboBox().type(`${constant_1.jenisBayarDebit}{downArrow}{enter}`, { force: true });\npage.servicePage.transaksiServicePage.modalSimpananService.NoRekeningSelectComboBox().type(`${constant_1.noRekening}{downArrow}{enter}`, { force: true });\npage.servicePage.transaksiServicePage.modalSimpananService.CardNoInputBox().type(`${constant_1.card}`, { force: true });\npage.servicePage.transaksiServicePage.modalSimpananService.DeskripsiNominalInputBox().type(`${constant_1.DeskripsiNominal}`, { force: true });\npage.servicePage.transaksiServicePage.modalSimpananService.DeskripsiPlusTransaksiButtonBox().click();\ncy.wait(1000);\npage.servicePage.transaksiServicePage.modalSimpananService.PilihJenisBayarSelectComboBox().type(`${constant_1.jenisBayarKredit}{downArrow}{enter}`, { force: true });\npage.servicePage.transaksiServicePage.modalSimpananService.NoRekeningSelectComboBox().type(`${constant_1.noRekening}{downArrow}{enter}`, { force: true });\npage.servicePage.transaksiServicePage.modalSimpananService.CardNoInputBox().type(`${constant_1.card}`, { force: true });\npage.servicePage.transaksiServicePage.modalSimpananService.SisaButtonBox().click({ force: true });\npage.servicePage.transaksiServicePage.modalSimpananService.DeskripsiPlusTransaksiButtonBox().click();\ncy.wait(1000);\npage.servicePage.transaksiServicePage.modalSimpananService.DeskripsiBayarSekarangButtonBox().click();",
+              "err": {},
+              "uuid": "cbdf62e6-8444-4701-b3da-1b0fda4b2820",
+              "parentUUID": "e509effd-1858-4ddc-a14b-fd15e343dda9",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "cbdf62e6-8444-4701-b3da-1b0fda4b2820"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 22481,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": true,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

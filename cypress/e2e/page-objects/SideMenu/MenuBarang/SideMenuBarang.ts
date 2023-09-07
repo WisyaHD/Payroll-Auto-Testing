@@ -4,7 +4,7 @@ export default class SideMenuBarang extends SideMenuBase{
     selectMenuBarangParent(url: string){
         const splitted = url.split('/');
         const get = splitted[3];
-        this.generateMenu(get, true, 6).click({scrollBehavior: false});
+        this.generateMenu(get, true, 7).click({scrollBehavior: false});
     }
 
     selectMenuTambahBarang(isActive: boolean, url: string = "-"){
@@ -35,7 +35,7 @@ export default class SideMenuBarang extends SideMenuBase{
         return this.generateSubMenu(4).click({scrollBehavior: false});
     }
 
-    selectPindahBarangSatuBaki(isActive: boolean, url: string = "-"){
+    selectMenuPindahBarangSatuBaki(isActive: boolean, url: string = "-"){
         if(!isActive){
             this.selectMenuBarangParent(url);
         }
