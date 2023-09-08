@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2023-09-06T09:05:42.410Z",
-    "end": "2023-09-06T09:06:05.099Z",
-    "duration": 22689,
+    "start": "2023-09-08T02:23:22.452Z",
+    "end": "2023-09-08T02:23:44.076Z",
+    "duration": 21624,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,17 +18,17 @@
   },
   "results": [
     {
-      "uuid": "b345e5d6-4394-4090-929a-aedd02cf5623",
+      "uuid": "0edbe2bc-2209-486e-8fba-765c7462cbfc",
       "title": "",
-      "fullFile": "cypress\\e2e\\specs\\MenuServiceSpecs\\TransaksiServiceSpecs\\TransaksiServiceTransferDebitCredit.specs.ts",
-      "file": "cypress\\e2e\\specs\\MenuServiceSpecs\\TransaksiServiceSpecs\\TransaksiServiceTransferDebitCredit.specs.ts",
+      "fullFile": "cypress\\e2e\\specs\\MenuPesananSpecs\\TransaksiPesananspecs\\TransaksiPesananTransferDebitCredit.specs.ts",
+      "file": "cypress\\e2e\\specs\\MenuPesananSpecs\\TransaksiPesananspecs\\TransaksiPesananTransferDebitCredit.specs.ts",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "e509effd-1858-4ddc-a14b-fd15e343dda9",
-          "title": "AccessMenuTransaksiService",
+          "uuid": "57650420-5fcf-4a6e-a5e4-1210be9840ee",
+          "title": "AccessMenuTransaksiPesanan",
           "fullFile": "",
           "file": "",
           "beforeHooks": [],
@@ -36,31 +36,31 @@
           "tests": [
             {
               "title": "click menu",
-              "fullTitle": "AccessMenuTransaksiService click menu",
+              "fullTitle": "AccessMenuTransaksiPesanan click menu",
               "timedOut": null,
-              "duration": 22481,
+              "duration": 21521,
               "state": "passed",
               "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "cy.visit('/dashboard');\ncy.url().should('include', '/dashboard');\ncy.url().then((url) => {\n    sidemenu.sideMenuService.selectMenuServiceParent(url);\n});\nsidemenu.sideMenuService.selectMenuTransaksiService(true, \"-\");\ncy.url().should('include', '/transaksi-service');\ncy.wait(1000);\npage.servicePage.transaksiServicePage.tambahDataCustomerButton();\ncy.wait(1000);\npage.servicePage.transaksiServicePage.modalDataCustomer.KodeSalesSelectComboBox().type(`${constant_1.kodeSales}{enter}`);\npage.servicePage.transaksiServicePage.modalDataCustomer.namaCutomerInputBox().type(`${constant_1.namaCustomer}`);\npage.servicePage.transaksiServicePage.modalDataCustomer.noHpInputBox().type(`${constant_1.noHp}`);\npage.servicePage.transaksiServicePage.modalDataCustomer.simpanDataButton().click();\ncy.wait(1000);\npage.servicePage.transaksiServicePage.tambahDataBarangButton();\npage.servicePage.transaksiServicePage.modalDataBarang.NamaBarangInputBox().type(`${constant_1.namaBarang}`);\npage.servicePage.transaksiServicePage.modalDataBarang.BeratBarangInputBox().type(`${constant_1.berat}`);\npage.servicePage.transaksiServicePage.modalDataBarang.OngkosInputBox().type(`${constant_1.ongkos}`);\npage.servicePage.transaksiServicePage.modalDataBarang.DeskripsiInputBox().type(`${constant_1.deskripsiPesanan}`);\npage.servicePage.transaksiServicePage.modalDataBarang.SimpanDataButton().click();\ncy.wait(1000);\npage.servicePage.transaksiServicePage.SimpanDataServiceButton().click({ force: true });\ncy.wait(1000);\npage.servicePage.transaksiServicePage.modalSimpananService.PilihJenisBayarSelectComboBox().type(`${constant_1.jenisBayarTransfer}{downArrow}{enter}`, { force: true });\npage.servicePage.transaksiServicePage.modalSimpananService.NoRekeningSelectComboBox().type(`${constant_1.noRekening}{downArrow}{enter}`, { force: true });\npage.servicePage.transaksiServicePage.modalSimpananService.CardNoInputBox().type(`${constant_1.card}`, { force: true });\npage.servicePage.transaksiServicePage.modalSimpananService.DeskripsiNominalInputBox().type(`${constant_1.DeskripsiNominal}`, { force: true });\npage.servicePage.transaksiServicePage.modalSimpananService.DeskripsiTambahTransaksiButtonBox().click();\ncy.wait(1000);\npage.servicePage.transaksiServicePage.modalSimpananService.PilihJenisBayarSelectComboBox().type(`${constant_1.jenisBayarDebit}{downArrow}{enter}`, { force: true });\npage.servicePage.transaksiServicePage.modalSimpananService.NoRekeningSelectComboBox().type(`${constant_1.noRekening}{downArrow}{enter}`, { force: true });\npage.servicePage.transaksiServicePage.modalSimpananService.CardNoInputBox().type(`${constant_1.card}`, { force: true });\npage.servicePage.transaksiServicePage.modalSimpananService.DeskripsiNominalInputBox().type(`${constant_1.DeskripsiNominal}`, { force: true });\npage.servicePage.transaksiServicePage.modalSimpananService.DeskripsiPlusTransaksiButtonBox().click();\ncy.wait(1000);\npage.servicePage.transaksiServicePage.modalSimpananService.PilihJenisBayarSelectComboBox().type(`${constant_1.jenisBayarKredit}{downArrow}{enter}`, { force: true });\npage.servicePage.transaksiServicePage.modalSimpananService.NoRekeningSelectComboBox().type(`${constant_1.noRekening}{downArrow}{enter}`, { force: true });\npage.servicePage.transaksiServicePage.modalSimpananService.CardNoInputBox().type(`${constant_1.card}`, { force: true });\npage.servicePage.transaksiServicePage.modalSimpananService.SisaButtonBox().click({ force: true });\npage.servicePage.transaksiServicePage.modalSimpananService.DeskripsiPlusTransaksiButtonBox().click();\ncy.wait(1000);\npage.servicePage.transaksiServicePage.modalSimpananService.DeskripsiBayarSekarangButtonBox().click();",
+              "code": "cy.visit('/dashboard');\ncy.url().should('include', '/dashboard');\ncy.url().then((url) => {\n    sidemenu.sideMenuPesanan.selectMenuPesananParent(url);\n});\nsidemenu.sideMenuPesanan.selectMenuTransaksiPesanan(true, \"-\");\ncy.url().should('include', '/transaksi-pesanan');\ncy.wait(1000);\npage.pesananPage.transaksiPesananPage.tambahDataCustomerButton();\ncy.wait(1000);\npage.pesananPage.transaksiPesananPage.modalDataCustomer.KodeSalesSelectComboBox().type(`${constant_1.kodeSales}{enter}`);\npage.pesananPage.transaksiPesananPage.modalDataCustomer.namaCutomerInputBox().type(`${constant_1.namaCustomer}`);\npage.pesananPage.transaksiPesananPage.modalDataCustomer.noHpInputBox().type(`${constant_1.noHp}`);\npage.pesananPage.transaksiPesananPage.modalDataCustomer.simpanDataButton().click();\ncy.wait(1000);\npage.pesananPage.transaksiPesananPage.tambahDataBarangButton();\ncy.wait(1000);\npage.pesananPage.transaksiPesananPage.modalDataBarang.KategoriSelectComboBox().type(`${constant_1.kategori}{downArrow}{enter}`);\npage.pesananPage.transaksiPesananPage.modalDataBarang.NamaBarangInputBox().type(`${constant_1.namaBarang}`);\npage.pesananPage.transaksiPesananPage.modalDataBarang.BeratInputBox().type(`${constant_1.berat}`);\npage.pesananPage.transaksiPesananPage.modalDataBarang.DeskripsiPesananInputBox().type(`${constant_1.deskripsiPesanan}`);\npage.pesananPage.transaksiPesananPage.modalDataBarang.DeskripsiAddButtonBox().click();\ncy.wait(1000);\npage.pesananPage.transaksiPesananPage.SimpananPesanan().click({ force: true });\ncy.wait(1000);\npage.pesananPage.transaksiPesananPage.modalDataSimpananPesanan.PilihJenisBayarSelectComboBox().type(`${constant_1.jenisBayarTransfer}{downArrow}{enter}`, { force: true });\npage.pesananPage.transaksiPesananPage.modalDataSimpananPesanan.NoRekeningSelectComboBox().type(`${constant_1.noRekening}{downArrow}{enter}`, { force: true });\npage.pesananPage.transaksiPesananPage.modalDataSimpananPesanan.CardNoInputBox().type('89423', { force: true });\npage.pesananPage.transaksiPesananPage.modalDataSimpananPesanan.DeskripsiNominalInputBox().type(`${constant_1.deskripsiPesanan}`, { force: true });\npage.pesananPage.transaksiPesananPage.modalDataSimpananPesanan.DeskripsiTambahTransaksiButtonBox().click();\ncy.wait(1000);\npage.pesananPage.transaksiPesananPage.modalDataSimpananPesanan.PilihJenisBayarSelectComboBox().type(`${constant_1.jenisBayarDebit}{downArrow}{enter}`, { force: true });\npage.pesananPage.transaksiPesananPage.modalDataSimpananPesanan.NoRekeningSelectComboBox().type(`${constant_1.noRekening}{downArrow}{enter}`, { force: true });\npage.pesananPage.transaksiPesananPage.modalDataSimpananPesanan.CardNoInputBox().type(`${constant_1.card}`, { force: true });\npage.pesananPage.transaksiPesananPage.modalDataSimpananPesanan.DeskripsiNominalInputBox().type(`${constant_1.DeskripsiNominal}`, { force: true });\npage.pesananPage.transaksiPesananPage.modalDataSimpananPesanan.DeskripsiPlusTransaksiButtonBox().click();\ncy.wait(1000);\npage.pesananPage.transaksiPesananPage.modalDataSimpananPesanan.PilihJenisBayarSelectComboBox().type(`${constant_1.jenisBayarKredit}{downArrow}{enter}`, { force: true });\npage.pesananPage.transaksiPesananPage.modalDataSimpananPesanan.NoRekeningSelectComboBox().type(`${constant_1.noRekening}{downArrow}{enter}`, { force: true });\npage.pesananPage.transaksiPesananPage.modalDataSimpananPesanan.CardNoInputBox().type(`${constant_1.card}`, { force: true });\npage.pesananPage.transaksiPesananPage.modalDataSimpananPesanan.SisaButtonBox().click({ force: true });\npage.pesananPage.transaksiPesananPage.modalDataSimpananPesanan.DeskripsiPlusTransaksiButtonBox().click();\ncy.wait(1000);\npage.pesananPage.transaksiPesananPage.modalDataSimpananPesanan.DeskripsiBayarSekarangButtonBox().click();",
               "err": {},
-              "uuid": "cbdf62e6-8444-4701-b3da-1b0fda4b2820",
-              "parentUUID": "e509effd-1858-4ddc-a14b-fd15e343dda9",
+              "uuid": "519931d2-7177-4dd1-b5f9-3e07afe5f17f",
+              "parentUUID": "57650420-5fcf-4a6e-a5e4-1210be9840ee",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "cbdf62e6-8444-4701-b3da-1b0fda4b2820"
+            "519931d2-7177-4dd1-b5f9-3e07afe5f17f"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 22481,
+          "duration": 21521,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
