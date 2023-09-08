@@ -8,7 +8,7 @@ export default defineConfig({
     video: false,
     reporterOptions:{
       reportDir: 'cypress/results',
-      overwrite: true,
+      overwrite: false,
       html: true,
       json: true,
     },

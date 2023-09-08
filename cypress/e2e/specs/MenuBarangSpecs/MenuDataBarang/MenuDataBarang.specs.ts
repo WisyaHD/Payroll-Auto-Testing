@@ -6,7 +6,7 @@ const password = "helpdesknagatechberasputih"
 const sidemenu = new SideMenu();
 const page = new Page();
 
-describe('AccessMenuDataBarang', () => {
+describe('Full Access Data Barang All Filter', () => {
     beforeEach(() => {
         cy.login(user_id, password);
     });
