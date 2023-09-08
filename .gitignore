@@ -3,6 +3,11 @@ node_modules
 *.pdf
 *.xls
 *.xlsx
+mochawesome-report
+cypress/results
+cypress/vidoes
+cypress/screenshots
+mochawesome.json
 ./mochawesome-report
 ./cypress/result
 ./cypress/vidoes

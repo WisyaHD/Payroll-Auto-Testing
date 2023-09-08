@@ -7,11 +7,15 @@ const pass = `${password}`;
 const sidemenu = new SideMenu();
 const page = new Page();
 
-describe('AccessMenuTambahBarang', () => {
+describe('Full Access Tambah Barang', () => {
     beforeEach(() => {
         cy.login(user_id, password);
     });
-    it('click menu', () => {
+    it('access pertama', () => {
+        cy.visit('/dashboard');
+        cy.url().should('include', '/dashboard');
+    });
+    it('menuju menu tambah barang', () => {
         cy.visit('/dashboard');
         cy.url().should('include', '/dashboard');
         cy.url().then((url: any) => {
@@ -19,11 +23,16 @@ describe('AccessMenuTambahBarang', () => {
         });
         sidemenu.sideMenuBarang.selectMenuTambahBarang(true, "-");
         cy.url().should('include', '/tambah-data-barang');
-        cy.wait(1000);
-        page.barangPage.tambahBarangPage.kodeGroupSelectBox().type(`${kodeGroup}{downArrow}{enter}`);
-        page.barangPage.tambahBarangPage.kodeJenisSelectBox().type(`${kodeJenis}{downArrow}{enter}`);
-        cy.wait(1000);
-        page.barangPage.tambahBarangPage.kodeBakiSelectBox().type(`${kodeBaki}{downArrow}{enter}`);
+        cy.wait(2000);
+    });
+    it('full access tambah barang', () => {
+        cy.visit('/tambah-data-barang');
+        cy.url().should('include', '/tambah-data-barang');
+        cy.wait(2000);
+        page.barangPage.tambahBarangPage.kodeGroupSelectBox().type('MT{downArrow}{enter}');
+        page.barangPage.tambahBarangPage.kodeJenisSelectBox().type('GLMT{downArrow}{enter}');
+        cy.wait(3000);
+        page.barangPage.tambahBarangPage.kodeBakiSelectBox().type('BK-GL{downArrow}{enter}');
         page.barangPage.tambahBarangPage.tambahBarangButton().click();
         page.barangPage.tambahBarangPage.modalTambahBarang.kodeInternInputBox().type(`${kodeIntern}`);
         page.barangPage.tambahBarangPage.modalTambahBarang.beratAsliInputBox().type(`${berat}`);

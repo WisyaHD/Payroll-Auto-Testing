@@ -8,7 +8,7 @@
     "start": "npx cypress open",
     "start:e2e": "npx cypress open --e2e",
     "start:report": "npx cypress run --reporter mochawesome",
-    "mergin:report": "npx mochawesome-merge cypress/results/*.json > mochawesome.json",
+    "mergin:report": "npx mochawesome-merge cypress/results/*/*.json > mochawesome.json",
     "make:report": "npx marge mochawesome.json"
   },
   "author": "rivan-nugraha",
