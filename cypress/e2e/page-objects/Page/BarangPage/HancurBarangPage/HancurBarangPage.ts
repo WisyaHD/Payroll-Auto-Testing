@@ -20,6 +20,6 @@ export default class HancurBarangPage{
     }
 
     batalSimpanButton(){
-        return cy.get('.btn-warning')
+        return cy.get('.btn-warning');
     }
 }

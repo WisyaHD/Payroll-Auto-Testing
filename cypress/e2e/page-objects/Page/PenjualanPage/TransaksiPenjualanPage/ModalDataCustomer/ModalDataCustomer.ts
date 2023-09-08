@@ -1,5 +1,5 @@
 export default class ModalDataCustomer{
-    salesSelectComboBox(){
+    KodeSalesSelectComboBox(){
         return cy.get('.css-yk16xz-control');
     }
 
@@ -24,6 +24,6 @@ export default class ModalDataCustomer{
     }
 
     simpanDataButton(){
-        return cy.get('.col-4 > .btn');
+        return cy.get(':nth-child(3) > .btn');
     }
 }

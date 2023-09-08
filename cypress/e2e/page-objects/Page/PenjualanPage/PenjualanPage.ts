@@ -1,4 +1,4 @@
-import TransaksiPenjualanPage from "./TransaksiPenjualanPage/TransaksiPenjualanPage"
+import TransaksiPenjualanPage from "./TransaksiPenjualanPage/TransaksiPenjualanPage";
 
 export default class PenjualanPage{
     public transaksiPenjualanPage: TransaksiPenjualanPage;

@@ -5,6 +5,7 @@ node_modules
 *.xlsx
 mochawesome-report
 cypress/results
-cypress/vidoes
-cypress/screenshots
+cypress/cypress/vidoes
+cypress/cypress/screenshots
+./mochawesome-report
 mochawesome.json
