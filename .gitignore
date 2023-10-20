@@ -7,5 +7,10 @@ mochawesome-report
 cypress/results
 cypress/cypress/vidoes
 cypress/cypress/screenshots
+mochawesome-report
+cypress/results
+cypress/vidoes
+cypress/screenshots
+mochawesome.json
 ./mochawesome-report
 mochawesome.json
