@@ -1,9 +1,8 @@
 import SideMenu from '../../../page-objects/SideMenu/SideMenu';
 import Page from '../../../page-objects/Page/Page';
-import { password, username } from '../../../../constant';
 
-const user_id = `${username}`;
-const pass = `${password}`;
+const user_id = "helpdesk";
+const password = "helpdesknagatechberasputih"
 const sidemenu = new SideMenu();
 const page = new Page();
 
