@@ -1,0 +1,32 @@
+      KONSUMEN WAJIB MENERIMA SLIP 1               
+========================================
+Slip Buyback
+
+Slip Buyback      : PPS-FB-231013-0002 
+Nama barang       : GELANG GOLONG MODEL
+}
+
+Harga Buyback     : 10,436,000 
+             LUNAS
+Lembar Konsumen   : 2023-10-13 
+      KONSUMEN WAJIB MENERIMA SLIP 2              
+========================================
+Slip Buyback Untuk Customer
+
+!!LOOP(detail_barang){
+Slip Buyback      : PPS-FB-231013-0002 
+Nama barang       : GELANG GOLONG MODEL
+Berat Atribut     : 0
+Harga Atribut     : 0
+
+Harga Buyback     : 10,436,000 
+             LUNAS
+Lembar Konsumen   : 2023-10-13 
+Type Pembayaran   : TRANSFER
+========================================
+             Grand Total
+========================================
+Total Rp: 10,436,000
+Total Berat: 25.420
+========================================
+

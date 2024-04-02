@@ -4,7 +4,7 @@ export default class SideMenuPembelian extends SideMenuBase{
     selectMenuPembelianParent(url: string){
         const splitted = url.split('/');
         const get = splitted[3];
-        this.generateMenu(get, false, 15).click();
+        this.generateMenu(get, true, 15).click({force: true});
     }
 
     selectMenuTransaksiPembelian(isActive: boolean, url: string = "-"){

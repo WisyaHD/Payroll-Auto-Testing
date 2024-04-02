@@ -22,8 +22,8 @@ describe('AccessMenuPindahBarang', () => {
         cy.url().should('include', '/pindah-barang');
         cy.wait(1000);
         page.barangPage.pindahBarangPage.KodeGudangInputBox().type('TOKO-TOKO{downArrow}{enter}');
-        page.barangPage.pindahBarangPage.BakiTujuanInputBox().type('TEST TIMBANG BAKI{downArrow}{enter}');
-        page.barangPage.pindahBarangPage.kodeBarcodeInputBox().type('00001073').wait(3500);
+        page.barangPage.pindahBarangPage.BakiTujuanInputBox().type('BK-GL{downArrow}{enter}');
+        page.barangPage.pindahBarangPage.kodeBarcodeInputBox().type('20001116').wait(3500);
         page.barangPage.pindahBarangPage.simpanDataButton().click();
         cy.wait(3000);
 

@@ -28,6 +28,6 @@ export default class DataBarangPage{
     }
 
     cariDataBarangButton(){
-        return cy.get('.col-lg-12 > .btn');
+        return cy.get('.col-3 > .btn');
     }
 }

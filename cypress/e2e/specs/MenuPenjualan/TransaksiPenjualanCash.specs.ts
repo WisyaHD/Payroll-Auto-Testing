@@ -9,7 +9,7 @@ const page = new Page();
 
 let kode_barcode: string;
 
-describe('AccessMenuTransaksiPenjualan', () => {
+describe('TransaksiPenjualanCash', () => {
     beforeEach(() => {
         cy.login(user_id, password);
     });
@@ -45,7 +45,6 @@ describe('AccessMenuTransaksiPenjualan', () => {
         cy.wait(1500);
         page.penjualanPage.transaksiPenjualanPage.simpananDataPenjualan().click({force: true});
         cy.wait(1500);  
-        // page.pesananPage.transaksiPesananPage.modalDataSimpananPesanan.DeskripsiNominalInputBox().type('200000', {force: true});
         page.penjualanPage.transaksiPenjualanPage.modalSimpananPenjualan.SisaButtonBox().click({force: true});
         page.penjualanPage.transaksiPenjualanPage.modalSimpananPenjualan.DeskripsiTambahTransaksiButtonBox().click({force: true});
         cy.wait(1000);

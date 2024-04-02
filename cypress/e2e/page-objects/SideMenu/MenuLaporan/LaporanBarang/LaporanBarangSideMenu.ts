@@ -4,7 +4,7 @@ export default class LaporanBarangSideMenu extends SideMenuBase {
     selectMenuLaporanBarangParent(url: string){
         const splitted = url.split('/');
         const get = splitted[3];
-        this.generateSubMenuLaporan(1, false, false, get).click();
+        this.generateSubMenuLaporan(2, false, false, get).click({force:true});
     }
 
     selectLaporanBarangDetail(isActive: boolean, url: string = "-"){

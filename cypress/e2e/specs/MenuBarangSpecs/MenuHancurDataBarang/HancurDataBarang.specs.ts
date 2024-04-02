@@ -23,7 +23,7 @@ describe('AccessMenuDataBarang', () => {
         cy.wait(1000);
         page.barangPage.hancurBarangPage.KondisiBarangInputBox().type(`${kondisiBarang}{downArrow}{enter}`);
         // page.barangPage.hancurBarangPage.TujuanGudangInputBox().type
-        page.barangPage.hancurBarangPage.kodeBarcodeInputBox().type(`${kodeBarcode}`).wait(3500);
+        page.barangPage.hancurBarangPage.kodeBarcodeInputBox().type('20001117').wait(3500);
         page.barangPage.hancurBarangPage.simpanDataButton().click();
         page.modalOtorisasi.usernameInputBox().type(`${validuser}`);
         page.modalOtorisasi.passwordInputBox().type(`${validpass}`);

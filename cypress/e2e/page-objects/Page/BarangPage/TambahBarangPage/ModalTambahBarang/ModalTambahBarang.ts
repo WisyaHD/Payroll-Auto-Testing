@@ -22,6 +22,9 @@ export default class ModalTambahBarang{
     kadarCetakInputBox(){
         return cy.get(':nth-child(21) > .form-group > .form-control');
     }
+    kadarInputBox(){
+        return cy.get('#kadar');
+    }
 
     namaAtributInputBox(){
         return cy.get('#nama_atribut');
@@ -42,7 +45,10 @@ export default class ModalTambahBarang{
     simpanDataButton(){
         return cy.get('.btn-success');
     }
-
+    tutupTagIdButton(){
+        return cy.get('.swal2-confirm');
+    }
+    
     cancelButton(){
         return cy.get('.col-lg-6 > .btn-secondary');
     }

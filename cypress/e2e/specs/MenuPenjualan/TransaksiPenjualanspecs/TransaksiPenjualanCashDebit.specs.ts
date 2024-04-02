@@ -7,7 +7,7 @@ const pass = `${password}`;
 const sidemenu = new SideMenu();
 const page = new Page();
 
-describe('AccessMenuTransaksiPenjualan', () => {
+describe('TransaksiPenjualanCashDebit', () => {
     beforeEach(() => {
         cy.login(user_id, password);
     });
@@ -30,13 +30,13 @@ describe('AccessMenuTransaksiPenjualan', () => {
         cy.wait(1000);
         page.penjualanPage.transaksiPenjualanPage.tambahBarangButton().click({force: true});
         cy.wait(1000);
-        page.penjualanPage.transaksiPenjualanPage.modalDataBarang.KodeBarcodeInputBox().type('00001079');
+        page.penjualanPage.transaksiPenjualanPage.modalDataBarang.KodeBarcodeInputBox().type('00002270');
         cy.wait(5000);
         page.penjualanPage.transaksiPenjualanPage.modalDataBarang.SimpananDataButtonBox().click({force: true});
         cy.wait(1500);
         page.penjualanPage.transaksiPenjualanPage.simpananDataPenjualan().click({force: true});
         cy.wait(1000);
-        page.penjualanPage.transaksiPenjualanPage.modalSimpananPenjualan.DeskripsiNominalInputBox().type('2000000', {force: true});
+        page.penjualanPage.transaksiPenjualanPage.modalSimpananPenjualan.DeskripsiNominalInputBox().type('500000', {force: true});
         page.penjualanPage.transaksiPenjualanPage.modalSimpananPenjualan.DeskripsiTambahTransaksiButtonBox().click();
         cy.wait(1000);
         page.penjualanPage.transaksiPenjualanPage.modalSimpananPenjualan.PilihJenisBayarSelectComboBox().type(`${jenisBayarDebit}{downArrow}{enter}`,{force: true});

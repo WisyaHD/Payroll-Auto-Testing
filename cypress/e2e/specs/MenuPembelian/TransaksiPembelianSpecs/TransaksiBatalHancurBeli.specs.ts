@@ -7,7 +7,7 @@ const pass = `${password}`;
 const sidemenu = new SideMenu();
 const page = new Page();
 
-describe('AccessMenuTransaksiPembelian', () => {
+describe('TransaksiBatalHancurBeli', () => {
     beforeEach(() => {
         cy.login(user_id, password);
     });
@@ -20,7 +20,7 @@ describe('AccessMenuTransaksiPembelian', () => {
         sidemenu.sideMenuPembelian.selectMenuTransaksiPembelian(true, "-");
         cy.url().should('include', '/transaksi-pembelian');
         cy.wait(1000);
-        page.pembelianPage.transaksiPembelianPage.KodeBarcodeInputBox().type('00001068');
+        page.pembelianPage.transaksiPembelianPage.KodeBarcodeInputBox().type('00001685');
         cy.wait(3000);
         page.pembelianPage.transaksiPembelianPage.TypeKondisiSelectComboBox().type('PRESENTASE{downArrow}{enter}')
         page.pembelianPage.transaksiPembelianPage.KondisiSelectComboBox().type('MULUS{DownArrow}{enter}');

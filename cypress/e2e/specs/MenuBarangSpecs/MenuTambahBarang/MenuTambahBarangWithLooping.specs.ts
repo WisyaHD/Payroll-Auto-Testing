@@ -30,10 +30,10 @@ describe('Full Access Tambah Barang With Looping', () => {
         cy.visit('/tambah-data-barang');
         cy.url().should('include', '/tambah-data-barang');
         cy.wait(2000);
-        page.barangPage.tambahBarangPage.kodeGroupSelectBox().type('MT{downArrow}{enter}');
-        page.barangPage.tambahBarangPage.kodeJenisSelectBox().type('GLMT{downArrow}{enter}');
+        page.barangPage.tambahBarangPage.kodeGroupSelectBox().type('70KA{downArrow}{enter}');
+        page.barangPage.tambahBarangPage.kodeJenisSelectBox().type('AG{downArrow}{enter}');
         cy.wait(3000);
-        page.barangPage.tambahBarangPage.kodeBakiSelectBox().type('BK-GL{downArrow}{enter}');
+        page.barangPage.tambahBarangPage.kodeBakiSelectBox().type('BK-SEM{downArrow}{enter}');
         var kode_intern = "KI-211";
         for(var i = 1; i <= 10; i++){
             cy.log(`Barang Ke-${i}`);
@@ -43,14 +43,19 @@ describe('Full Access Tambah Barang With Looping', () => {
             cy.wait(1000);
             page.barangPage.tambahBarangPage.tambahBarangButton().click();
             page.barangPage.tambahBarangPage.modalTambahBarang.kodeInternInputBox().type(kodeInternOpts);
+            cy.wait(500);
+            page.barangPage.tambahBarangPage.modalTambahBarang.namaBarangInputBox().type('GELANG1')
             page.barangPage.tambahBarangPage.modalTambahBarang.beratAsliInputBox().type('2.5');
             page.barangPage.tambahBarangPage.modalTambahBarang.beratInputBox().clear().type('3');
             page.barangPage.tambahBarangPage.modalTambahBarang.kadarCetakInputBox().type('100');
+            page.barangPage.tambahBarangPage.modalTambahBarang.kadarInputBox().type('100');
             page.barangPage.tambahBarangPage.modalTambahBarang.namaAtributInputBox().type('ACC-CINCIN');
             page.barangPage.tambahBarangPage.modalTambahBarang.beratAtributInputBox().type('0.5');
             page.barangPage.tambahBarangPage.modalTambahBarang.hargaAtributInputBox().type('200000');
             page.barangPage.tambahBarangPage.modalTambahBarang.beratPlastikInput().type('0.2');
             page.barangPage.tambahBarangPage.modalTambahBarang.simpanDataButton().click();
+            page.barangPage.tambahBarangPage.modalTambahBarang.tutupTagIdButton().click();
+
             cy.wait(3000);
         }
     })

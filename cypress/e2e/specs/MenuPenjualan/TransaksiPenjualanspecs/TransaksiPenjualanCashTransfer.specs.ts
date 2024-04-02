@@ -7,7 +7,7 @@ const pass = `${password}`;
 const sidemenu = new SideMenu();
 const page = new Page();
 
-describe('AccessMenuTransaksiPenjualan', () => {
+describe('TransaksiPenjualanCashTransfer', () => {
     beforeEach(() => {
         cy.login(user_id, password);
     });
@@ -30,7 +30,7 @@ describe('AccessMenuTransaksiPenjualan', () => {
         cy.wait(1000);
         page.penjualanPage.transaksiPenjualanPage.tambahBarangButton().click({force: true});
         cy.wait(1000);
-        page.penjualanPage.transaksiPenjualanPage.modalDataBarang.KodeBarcodeInputBox().type('00001075');
+        page.penjualanPage.transaksiPenjualanPage.modalDataBarang.KodeBarcodeInputBox().type('00002268');
         cy.wait(5000);
         page.penjualanPage.transaksiPenjualanPage.modalDataBarang.SimpananDataButtonBox().click({force: true});
         cy.wait(1500);

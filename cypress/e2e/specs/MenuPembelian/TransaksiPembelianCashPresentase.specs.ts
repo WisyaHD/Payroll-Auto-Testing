@@ -7,7 +7,7 @@ const pass = `${password}`;
 const sidemenu = new SideMenu();
 const page = new Page();
 
-describe('AccessMenuTransaksiPembelian', () => {
+describe('TransaksiPembelianCashPresentase', () => {
     beforeEach(() => {
         cy.login(user_id, password);
     });
@@ -18,9 +18,9 @@ describe('AccessMenuTransaksiPembelian', () => {
             sidemenu.sideMenuPembelian.selectMenuPembelianParent(url);
         });
         sidemenu.sideMenuPembelian.selectMenuTransaksiPembelian(true, "-");
-        cy.url().should('include', '/transaksi-pembelian');
+        cy.url().should('include', '/TransaksiPembelianCashPresentase');
         cy.wait(1000);
-        page.pembelianPage.transaksiPembelianPage.KodeBarcodeInputBox().type('00001070');
+        page.pembelianPage.transaksiPembelianPage.KodeBarcodeInputBox().type('00002267');
         cy.wait(3000);
         page.pembelianPage.transaksiPembelianPage.TypeKondisiSelectComboBox().type('PRESENTASE{downArrow}{enter}')
         page.pembelianPage.transaksiPembelianPage.KondisiSelectComboBox().type('MULUS{DownArrow}{enter}');

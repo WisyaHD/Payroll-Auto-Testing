@@ -1,0 +1,33 @@
+========================================
+             NOTA SERVICE      
+          Pelanggan            
+========================================
+No Service       : VDC-SV-240305-0004 
+Tanggal          : 05-03-2024 
+Kode Sales       : BOY 
+Nama Customer    : IKI
+No Hp            : 0851217233 
+Alamat Customer  : -
+Total Service    : 1,016,500 
+========================================
+Keterangan
+========================================
+Nama Barang      : CINCIN EMAS TUA
+Berat            : 7 
+Jumlah           : 1 
+Ongkos           : 1,000,000 
+Deskripsi        : CINCIN EMAS TUA
+========================================
+Dp               : 1,016,500 
+Total Ongkos     : 1,016,500 
+========================================
+                               TTD       
+                            
+       
+                            
+
+                            
+  
+                          (            )
+
+

@@ -7,7 +7,7 @@ const pass = `${password}`;
 const sidemenu = new SideMenu();
 const page = new Page();
 
-describe('AccessMenuTransaksiPenjualan', () => {
+describe('TransaksiPenjualanCashKredit', () => {
     beforeEach(() => {
         cy.login(user_id, password);
     });
@@ -21,7 +21,7 @@ describe('AccessMenuTransaksiPenjualan', () => {
         cy.url().should('include', '/transaksi-penjualan');
         cy.wait(1000);
         page.penjualanPage.transaksiPenjualanPage.tambahDataCustomerButton().click({force: true});
-        cy.wait(1000);
+        cy.wait(2000);
         page.penjualanPage.transaksiPenjualanPage.modalDataCustomer.KodeSalesSelectComboBox().type(`${kodeSales}{downArrow}{enter}`);
         page.penjualanPage.transaksiPenjualanPage.modalDataCustomer.namaCutomerInputBox().type(`${namaCustomer}`);
         page.penjualanPage.transaksiPenjualanPage.modalDataCustomer.noHpInputBox().type(`${noHp}`);
@@ -30,7 +30,7 @@ describe('AccessMenuTransaksiPenjualan', () => {
         cy.wait(1000);
         page.penjualanPage.transaksiPenjualanPage.tambahBarangButton().click({force: true});
         cy.wait(1000);
-        page.penjualanPage.transaksiPenjualanPage.modalDataBarang.KodeBarcodeInputBox().type('00001080');
+        page.penjualanPage.transaksiPenjualanPage.modalDataBarang.KodeBarcodeInputBox().type('00002269');
         cy.wait(5000);
         page.penjualanPage.transaksiPenjualanPage.modalDataBarang.SimpananDataButtonBox().click({force: true});
         cy.wait(1500);

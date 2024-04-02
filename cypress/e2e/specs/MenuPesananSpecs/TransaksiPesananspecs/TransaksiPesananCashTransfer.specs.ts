@@ -7,7 +7,7 @@ const pass = `${password}`;
 const sidemenu = new SideMenu();
 const page = new Page();
 
-describe('AccessMenuTransaksiPesanan', () => {
+describe('TransaksiPesananCashTransfer', () => {
     beforeEach(() => {
         cy.login(user_id, password);
     });

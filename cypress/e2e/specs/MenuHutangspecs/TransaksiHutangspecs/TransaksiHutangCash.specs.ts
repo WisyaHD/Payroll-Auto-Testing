@@ -7,7 +7,7 @@ const pass = `${password}`;
 const sidemenu = new SideMenu();
 const page = new Page();
 
-describe('AccessMenuLihatHutang', () => {
+describe('TransaksiHutangCash', () => {
     beforeEach(() => {
         cy.login(user_id, password);
     });
@@ -21,7 +21,7 @@ describe('AccessMenuLihatHutang', () => {
         cy.url().should('include', '/lihat-hutang');
         page.hutangPage.lihatHutangPage.FilterHutangSelectBox().click({force: true});
         page.hutangPage.lihatHutangPage.TanggalDariDatePickerInputBox().click();
-        cy.get(':nth-child(1) > .react-datepicker__day--001').click();
+        cy.get(':nth-child(1) > .react-datepicker__day--001').click({force: true});
         page.hutangPage.lihatHutangPage.CariHutangSelectBox().click({force: true});
         page.hutangPage.lihatHutangPage.PelunasanButton().click({force: true});
         cy.wait(1000);

@@ -1,6 +1,6 @@
 export default class ModalSimpananPenjualan{
     PilihJenisBayarSelectComboBox(){
-       return cy.get(':nth-child(4) > .form-group > .select-search > .select-search__value > .select-search__input');
+       return cy.get(':nth-child(5) > .form-group > .select-search > .select-search__value > .select-search__input');
     }
     NoRekeningSelectComboBox(){
         return cy.get('#nama_bank > .select-search__value > .select-search__input');
@@ -35,6 +35,9 @@ export default class ModalSimpananPenjualan{
     }
     DeskripsiAddButtonBox(){
        return cy.get('.row > .text-right > .btn');
+    }
+   PembayaranTransferLebiSelectComboBox(){
+      return cy.get('#transfer_lebih > .select-search__value > .select-search__input');
             
     }
 }

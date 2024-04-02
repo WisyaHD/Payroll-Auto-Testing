@@ -30,6 +30,6 @@ describe('Access Laporan Tambah Barang', () => {
         page.laporanPage.laporanBarangPage.laporanTambahBarangPage.exportPdfButton();
     });
     it('click download pdf dan membaca judul', () => {
-        cy.task('readPdf', './cypress/downloads/LAPORAN BARANG DETAIL.pdf').should('include', 'TAMBAH BARANG');
+        cy.task('readPdf', './cypress/downloads/LAPORAN TAMBAH BARANG.pdf').should('include', 'TAMBAH BARANG');
     });
 })

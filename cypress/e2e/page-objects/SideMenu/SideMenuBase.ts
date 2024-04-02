@@ -3,7 +3,7 @@ export default class SideMenuBase{
         if(!isScrollable){
             return cy.get(`:nth-child(${child}) > [href="/${url}"] > span`)
         }else{
-            return cy.get(`.scrollbar-container > :nth-child(2) > :nth-child(${child}) > [href="/${url}"] > span`)
+            return cy.get(`.scrollbar-container > :nth-child(1) > :nth-child(${child}) > [href="/${url}"] > span`)
         }
     }
 
@@ -18,12 +18,12 @@ export default class SideMenuBase{
             if(isNeedLink){
                 return cy.get(`.d-block > :nth-child(${selectedSubMenu}) > [href="/${url}"] > span`);
             }else{
-                return cy.get('.d-block > :nth-child(2) > a > span')
+                return cy.get('.d-block > :nth-child(1) > a > span')
             }
         }
     }
 
     generateChildSubMenu(selectedChildSubMenu: number){
-        return cy.get(`:nth-child(23) > :nth-child(2) > .expand > .sub-menu > :nth-child(${selectedChildSubMenu}) > a > span`)
+        return cy.get(`:nth-child(24) > :nth-child(2) > .expand > .sub-menu > :nth-child(${selectedChildSubMenu}) > a > span`)
     }
 }

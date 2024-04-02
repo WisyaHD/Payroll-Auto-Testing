@@ -7,7 +7,7 @@ const pass = `${password}`;
 const sidemenu = new SideMenu();
 const page = new Page();
 
-describe('AccessMenuTransaksiHutang', () => {
+describe('TransaksiHutangCash', () => {
     beforeEach(() => {
         cy.login(user_id, password);
     });
@@ -34,7 +34,7 @@ describe('AccessMenuTransaksiHutang', () => {
         cy.wait (1000);
         page.hutangPage.transaksiHutangPage.tambahDataBarangButton();
         cy.wait(1000);
-        page.hutangPage.transaksiHutangPage.modalDataBarang.KodeGroupComboBox().type(`${kodeGroup}{downArrow}{enter}`);
+        // page.hutangPage.transaksiHutangPage.modalDataBarang.KodeGroupComboBox().type(`${kodeGroup}{downArrow}{enter}`);
         page.hutangPage.transaksiHutangPage.modalDataBarang.NamaBarangInputBox().type(`${namaBarang}`);
         page.hutangPage.transaksiHutangPage.modalDataBarang.BeratBarangInputBox().type(`${berat}`);
         page.hutangPage.transaksiHutangPage.modalDataBarang.KadarInputBox().type(`${kadar}`);
@@ -45,10 +45,10 @@ describe('AccessMenuTransaksiHutang', () => {
         cy.wait(1000);
         page.hutangPage.transaksiHutangPage.modalDataHutang.JumlahHutangInputBox().type(`${jumlahHutang}`);
         cy.wait(1000);
-        page.hutangPage.transaksiHutangPage.modalDataHutang.BungaPerBulanInputBox().type(`${bunga}`);
+        // page.hutangPage.transaksiHutangPage.modalDataHutang.BungaPerBulanInputBox().type(`${bunga}`);
         page.hutangPage.transaksiHutangPage.modalDataHutang.LamaPinjamInputBox().clear().type(`${LamaPinjam}`);
         cy.wait(1000);
-        page.hutangPage.transaksiHutangPage.modalDataHutang.BungaPerBulanInputBox().type(`${bunga}`);
+        // page.hutangPage.transaksiHutangPage.modalDataHutang.BungaPerBulanInputBox().type(`${bunga}`);
         page.hutangPage.transaksiHutangPage.modalDataHutang.SimpanDataButton(); 
         cy.wait(3000);
         

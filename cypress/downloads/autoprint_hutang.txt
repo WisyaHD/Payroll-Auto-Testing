@@ -1,0 +1,53 @@
+========================================
+              NOTA HUTANG                 
+========================================
+No Faktur Hutang : VDC-PI24-00028 
+Tgl Transaksi    : 04-03-2024 
+Tgl Jth Tempo.   : 24-03-2024 
+Kode Sales       : BOY 
+Kode Member      : NONMEMBER 
+Kode Intern     : undefined 
+No Sebelumnya   : undefined 
+Nama Customer    : IKI
+No Hp            : 0851217233 
+Alamat Customer  : -
+========================================
+Keterangan
+========================================
+Nama Barang      : CINCIN EMAS TUA 
+Jumlah           : 12 
+Berat            : 4 
+========================================
+Total Berat      : 4.000 
+Bunga            : 4 %
+Jumlah Hutang    : 250,000
+Total Hutang     : 256,667 
+========================================
+Kondisi / Syarat Perjanjian Hutang
+----------------------------------------
+1. Penerima hutang menyatakan barang ter
+sebut adalah milik yang sah dan tidak da
+lam sengketa dengan pihak manapun
+
+2. Pemberi hutang memberikan toleransi  
+selama 3 bulan sejak perjanjian ini un
+tuk penerima hutang menebus kembali ba
+rang tersebut
+
+3. Penerima hutang menyatakan apabila s
+etelah lewat dari 3 bulan tidak menebus
+barang tersebut, berarti telah menjual
+secara sah dan memberikan hak penuh kep
+ada pemberi hutang atas barang tersebut
+serta membebaskan pemberi hutang dari 
+segala resiko gugatan atas barang 
+tersebut 
+                               TTD   
+                            
+       
+                            
+
+                            
+  
+                         (PENERIMA HUTANG)
+

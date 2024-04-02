@@ -1,6 +1,6 @@
 import SideMenu from '../../../page-objects/SideMenu/SideMenu';
 import Page from '../../../page-objects/Page/Page';
-import { berat, beratPlastik, hargaAtribut, kadar, kodeBaki, kodeGroup, kodeIntern, kodeJenis, namaAtribut, password, username } from '../../../../constant';
+import { berat, beratPlastik, hargaAtribut, kadar, kodeGroup, kodeIntern, kodeJenis, namaAtribut, password, username } from '../../../../constant';
 
 const user_id = `${username}`;
 const pass = `${password}`;
@@ -43,5 +43,6 @@ describe('Full Access Tambah Barang', () => {
         page.barangPage.tambahBarangPage.modalTambahBarang.hargaAtributInputBox().type(hargaAtribut);
         page.barangPage.tambahBarangPage.modalTambahBarang.beratPlastikInput().type(`${beratPlastik}`);
         page.barangPage.tambahBarangPage.modalTambahBarang.simpanDataButton().click();
+        page.barangPage.tambahBarangPage.modalTambahBarang.tutupTagIdButton().click();
     })
 })

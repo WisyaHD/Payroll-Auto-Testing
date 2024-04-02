@@ -22,7 +22,7 @@ export default class TransaksiServicePage{
         return cy.get('.btn-success').click({force: true});
     }
     SimpanDataServiceButton(){
-        return cy.get('.col-4 > .btn-primary').click({force: true});
+        return cy.get(':nth-child(2) > .btn').click({force: true});
         
 
     }

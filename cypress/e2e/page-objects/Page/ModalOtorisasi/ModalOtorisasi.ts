@@ -4,11 +4,11 @@ export default class ModalOtorisasi{
     }
 
     passwordInputBox(){
-        return cy.get(':nth-child(4) > .form-group > .form-control');
+        return cy.get('form > .row > :nth-child(4) > .form-group > .form-control');
     }
 
     keteranganInputBox(){
-        return cy.get(':nth-child(5) > .form-group > .form-control');
+        return cy.get('form > .row > :nth-child(5) > .form-group > .form-control');
     }
 
     otorisasiButton(){

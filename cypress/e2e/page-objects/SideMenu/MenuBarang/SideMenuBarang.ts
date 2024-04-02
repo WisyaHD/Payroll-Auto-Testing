@@ -25,34 +25,34 @@ export default class SideMenuBarang extends SideMenuBase{
         if(!isActive){
             this.selectMenuBarangParent(url);
         }
-        return this.generateSubMenu(3).click({scrollBehavior: false});
+        return this.generateSubMenu(5).click({scrollBehavior: false});
     }
 
     selectMenuPindahBarang(isActive: boolean, url: string = "-"){
         if(!isActive){
             this.selectMenuBarangParent(url);
         }
-        return this.generateSubMenu(4).click({scrollBehavior: false});
+        return this.generateSubMenu(6).click({scrollBehavior: false});
     }
 
     selectMenuPindahBarangSatuBaki(isActive: boolean, url: string = "-"){
         if(!isActive){
             this.selectMenuBarangParent(url);
         }
-        return this.generateSubMenu(5).click({scrollBehavior: false});
+        return this.generateSubMenu(7).click({scrollBehavior: false});
     }
 
     selectMenuTimbangBaki(isActive: boolean, url: string = "-"){
         if(!isActive){
             this.selectMenuBarangParent(url);
         }
-        return this.generateSubMenu(6).click({scrollBehavior: false});
+        return this.generateSubMenu(8).click({scrollBehavior: false});
     }
 
     selectMenuTambahDanAmbilStockAksesoris(isActive: boolean, url: string = "-"){
         if(!isActive){
             this.selectMenuBarangParent(url);
         }
-        return this.generateSubMenu(7).click({scrollBehavior: false});
+        return this.generateSubMenu(9).click({scrollBehavior: false});
     }
 }
