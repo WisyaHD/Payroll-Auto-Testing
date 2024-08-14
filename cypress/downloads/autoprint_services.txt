@@ -1,25 +1,96 @@
 ========================================
-             NOTA SERVICE      
-          Pelanggan            
+             NOTA SERVICE                   
 ========================================
-No Service       : VDC-SV-240305-0004 
-Tanggal          : 05-03-2024 
+No Service       : VDC-SV-240502-0001 
+Tanggal          : 02-05-2024 
 Kode Sales       : BOY 
 Nama Customer    : IKI
 No Hp            : 0851217233 
 Alamat Customer  : -
-Total Service    : 1,016,500 
+Total Service    : 1,120,000 
 ========================================
 Keterangan
 ========================================
 Nama Barang      : CINCIN EMAS TUA
-Berat            : 7 
+Berat            : 2 
+Jumlah           : 1 
+Ongkos           : 1,000,000 
+Deskripsi        : CINCIN EMAS TUA
+
+========================================
+Dp               : undefined 
+Total Ongkos     : undefined 
+========================================
+                               TTD       
+                            
+       
+                            
+
+                            
+  
+                          (            )
+
+========================================
+             NOTA SERVICE                   
+========================================
+No Service       : undefined 
+Tanggal          : undefined 
+Kode Sales       : undefined 
+Nama Customer    : undefined
+                   undefined
+                   undefined 
+No Hp            : undefined 
+Alamat Customer  : undefined
+                   undefined
+                   undefined 
+Total Service    : undefined 
+========================================
+Keterangan
+========================================
+Nama Barang      : CINCIN EMAS TUA
+Berat            : 2 
 Jumlah           : 1 
 Ongkos           : 1,000,000 
 Deskripsi        : CINCIN EMAS TUA
 ========================================
-Dp               : 1,016,500 
-Total Ongkos     : 1,016,500 
+Dp               : undefined 
+Total Ongkos     : undefined 
+========================================
+                               TTD       
+                            
+       
+                            
+
+                            
+  
+                          (            )
+
+========================================
+             NOTA SERVICE                   
+========================================
+No Service       : undefined 
+Tanggal          : undefined 
+Kode Sales       : undefined 
+Nama Customer    : undefined
+                   undefined
+                   undefined 
+No Hp            : undefined 
+Alamat Customer  : undefined
+                   undefined
+                   undefined 
+Total Service    : undefined 
+========================================
+Keterangan
+========================================
+
+Nama Barang      : CINCIN EMAS TUA
+Berat            : 2 
+Jumlah           : 1 
+Ongkos           : 1,000,000 
+Deskripsi        : CINCIN EMAS TUA
+========================================
+Dp               : 1,120,000 
+Total Ongkos     : 1,120,000 
 ========================================
                                TTD       
                             

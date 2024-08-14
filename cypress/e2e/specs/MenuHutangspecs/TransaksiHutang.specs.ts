@@ -45,12 +45,11 @@ describe('TransaksiHutangCash', () => {
         cy.wait(1000);
         page.hutangPage.transaksiHutangPage.modalDataHutang.JumlahHutangInputBox().type(`${jumlahHutang}`);
         cy.wait(1000);
-        // page.hutangPage.transaksiHutangPage.modalDataHutang.BungaPerBulanInputBox().type(`${bunga}`);
+        page.hutangPage.transaksiHutangPage.modalDataHutang.BungaPerBulanInputBox().type(`${bunga}`);
         page.hutangPage.transaksiHutangPage.modalDataHutang.LamaPinjamInputBox().clear().type(`${LamaPinjam}`);
         cy.wait(1000);
         // page.hutangPage.transaksiHutangPage.modalDataHutang.BungaPerBulanInputBox().type(`${bunga}`);
         page.hutangPage.transaksiHutangPage.modalDataHutang.SimpanDataButton(); 
-        cy.wait(3000);
         
     }
     })

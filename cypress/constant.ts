@@ -1,4 +1,3 @@
-import { get } from "cypress/types/lodash";
 import { couldStartTrivia } from "typescript";
 
 // const baseUrl = "https://qc.nagatech.id/";

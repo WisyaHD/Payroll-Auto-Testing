@@ -23,10 +23,10 @@ describe('Access Laporan Tambah Barang', () => {
             sidemenu.sideMenuLaporan.laporanBarangSideMenu.selectMenuLaporanBarangParent(url);
         })
         sidemenu.sideMenuLaporan.laporanBarangSideMenu.selectLaporanTambahBarang(true, "-");
-        cy.wait(5000);
-        cy.url().should('include', '/laporan-tambah-barang');
+        cy.wait(3000);
+        cy.url().should('include', '/laporan-tambah-barang');   
         page.laporanPage.laporanBarangPage.laporanTambahBarangPage.lihatLaporanButton();
-        cy.wait(6000);
+        cy.wait(2000);
         page.laporanPage.laporanBarangPage.laporanTambahBarangPage.exportPdfButton();
     });
     it('click download pdf dan membaca judul', () => {

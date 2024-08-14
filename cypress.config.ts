@@ -7,6 +7,7 @@ import * as dotenv from 'dotenv';
 dotenv.config();
 
 export default defineConfig({
+  projectId: 'b7t5du',
   e2e: {
     reporter:"mochawesome",
     video: false,

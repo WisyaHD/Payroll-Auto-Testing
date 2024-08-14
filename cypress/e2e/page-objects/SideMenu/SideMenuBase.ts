@@ -24,6 +24,6 @@ export default class SideMenuBase{
     }
 
     generateChildSubMenu(selectedChildSubMenu: number){
-        return cy.get(`:nth-child(24) > :nth-child(2) > .expand > .sub-menu > :nth-child(${selectedChildSubMenu}) > a > span`)
+        return cy.get(`:nth-child(25) > :nth-child(2) > .expand > .sub-menu > :nth-child(${selectedChildSubMenu}) > a > span`)
     }
 }

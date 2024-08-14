@@ -29,12 +29,12 @@ describe('Full Access Tambah Barang With Looping', () => {
         cy.visit('/tambah-data-barang');
         cy.url().should('include', '/tambah-data-barang');
         cy.wait(2000);
-        page.barangPage.tambahBarangPage.kodeGroupSelectBox().type('70KA{downArrow}{enter}');
-        page.barangPage.tambahBarangPage.kodeJenisSelectBox().type('AG{downArrow}{enter}');
+        page.barangPage.tambahBarangPage.kodeGroupSelectBox().type('GD{downArrow}{enter}');
+        page.barangPage.tambahBarangPage.kodeJenisSelectBox().type('GL{downArrow}{enter}');
         cy.wait(3000);
-        page.barangPage.tambahBarangPage.kodeBakiSelectBox().type('BK-SEM{downArrow}{enter}');
+        page.barangPage.tambahBarangPage.kodeBakiSelectBox().type('BK-GL{downArrow}{enter}');
         var kode_intern = "KI-211";
-        for(var i = 1; i <= 10; i++){
+        for(var i = 1; i <= 100; i++){
             cy.log(`Barang Ke-${i}`);
             const splitted = kode_intern.split("-")
             const kodeInternOpts = `KI-${Number(splitted[1]) + i}`
@@ -54,8 +54,8 @@ describe('Full Access Tambah Barang With Looping', () => {
             page.barangPage.tambahBarangPage.modalTambahBarang.beratPlastikInput().type('0.2');
             page.barangPage.tambahBarangPage.modalTambahBarang.simpanDataButton().click();
             page.barangPage.tambahBarangPage.modalTambahBarang.tutupTagIdButton().click();
-
-            cy.wait(3000);
+                        
+            cy.wait(2000);
         }
     })
 })

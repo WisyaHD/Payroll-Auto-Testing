@@ -8,7 +8,7 @@ export default class LaporanTambahBarangPage{
     }
 
     lihatLaporanButton(){
-        return cy.get(':nth-child(7) > .btn').click({force: true});
+        return cy.get(':nth-child(9) > .btn').click({force: true});
     }
 
     exportPdfButton(){
